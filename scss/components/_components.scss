@@ -1,0 +1,118 @@
+/* 
+===============
+NAVBAR SETTINGS
+===============
+*/
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    background-color: #1f2e35;
+    color: #fff;
+
+    .links {
+        a {
+            color: #fff;
+        }
+    }
+
+    .logo {
+        font-size: 14px;
+        display: flex;
+    
+        .image {
+            img {
+                width: 40%;
+            }
+        }
+    
+        .title {
+            padding: 0.5rem 0.5rem;
+            font-size: 25px;
+        }
+    }
+
+    .signIn {
+        color: #fff;
+        background-color: #1f2e35;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 0.75rem 2rem;
+        font-size: 16px;
+    }
+
+    .signUp {
+        color: #fff;
+        background-color: #02897A;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 0.75rem 2rem;
+        font-size: 16px;
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+    li {
+        padding: 4px 4px;
+
+        &:hover {
+            background-color: #4c9e9e;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* 
+=============
+MEDIA QUERIES
+=============
+*/
+
+@media (max-width: 1020px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+
+        li {
+            &:hover {
+                display: inline-block;
+                background-color: #4c9e9e;
+                transition: 0.3s ease;
+            }
+        }
+
+        li + li {
+            margin-top: 10px;
+        }
+    }
+
+    input[type="checkbox"]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

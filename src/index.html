@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="site-logo">
-                <img class="image" src="../assets/Group 190.png" alt="">
-                <h1 class="title"></h1>
-            </div>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a class="item" href="#">Product</a></li>
-                    <li><a class="item" href="#">Customers</a></li>
-                    <li><a class="item" href="#">Pricing</a></li>
-                    <li><a class="item" href="#">Resources</a></li>
-                    <li><a class="signIn" href="#"><button>Sign In</button></a></li>
-                    <li><a class="signUp" href="#"><button>Sign Un</button></a></li>
-                    <li><img class="image" src="../assets/Frame 49.png" alt=""></li>
-                </ul>
-            </nav>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href=""><img src="../assets/Group 190.png" alt="" class="image" /></a>
+        <p class="title">Product</p>
+      </div>
+      <ul class="links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a class="item" href="/">Product</a></li>
+          <li><a class="item" href="/">Customers</a></li>
+          <li><a class="item" href="/">Pricing</a></li>
+          <li><a class="item" href="/">Resources</a></li>
+          <li>
+            <a href="#"><button class="signIn">Sign In</button></a>
+          </li>
+          <li>
+            <a href="#"><button class="signUp">Sign Up</button></a>
+          </li>
+          <li><img src="../assets/Frame 49.png" alt="" /></li>
         </div>
-    </header>
-</body>
+      </ul>
+    </nav>
+  </body>
 </html>

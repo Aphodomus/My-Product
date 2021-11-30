@@ -1,3 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* 
+===============
+NAVBAR SETTINGS
+===============
+*/
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10%;
+  background-color: #1f2e35;
+  color: #fff;
+}
+.nav-bar .links a {
+  color: #fff;
+}
+.nav-bar .logo {
+  font-size: 14px;
+  display: flex;
+}
+.nav-bar .logo .image img {
+  width: 40%;
+}
+.nav-bar .logo .title {
+  padding: 0.5rem 0.5rem;
+  font-size: 25px;
+}
+.nav-bar .signIn {
+  color: #fff;
+  background-color: #1f2e35;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+}
+.nav-bar .signUp {
+  color: #fff;
+  background-color: #02897A;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+}
+
+/* 
+===========
+NAVBAR MENU
+===========
+*/
+.menu {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.menu li {
+  padding: 4px 4px;
+}
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* 
+=============
+MEDIA QUERIES
+=============
+*/
+@media (max-width: 1020px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 10px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
