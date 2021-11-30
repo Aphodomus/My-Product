@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://gitlab.com/Aphodomus/interns-program-myproduct/issues"
   },
-  "homepage": "https://gitlab.com/Aphodomus/interns-program-myproduct#readme"
+  "homepage": "https://gitlab.com/Aphodomus/interns-program-myproduct#readme",
+  "devDependencies": {
+    "sass": "^1.44.0"
+  }
 }
