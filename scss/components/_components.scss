@@ -188,6 +188,13 @@ FOOTER SETTINGS
     }
 }
 
+.lasttxt {
+    text-align: center;
+    background-color: #1f2e35;
+    color: white;
+    padding-bottom: 1%;
+}
+
 /* 
 =============
 FOOTER MEDIA QUERIES
@@ -197,7 +204,7 @@ FOOTER MEDIA QUERIES
 @media (max-width: 1020px) {
     .footer {
         display: flex;
-        position: absolute;
+        position: relative;
         right: 0;
         left: 0;
         text-align: center;
@@ -236,5 +243,13 @@ FOOTER MEDIA QUERIES
             text-align: center;
             margin-left: 5%;
         }
+    }
+
+    .lasttxt {
+        text-align: center;
+        background-color: #1f2e35;
+        color: white;
+        padding-bottom: 10%;
+        padding-top: -8%;
     }
 }
