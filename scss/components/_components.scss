@@ -133,23 +133,27 @@ FOOTER SETTINGS
     margin-top: 100%;
 }
 .col1 {
+    margin-top: -5%;
     width: 25%;
     .redondo {
-        margin: 1% .5%; 
+        margin: 5% 1.5%; 
         border-radius: 100%;
+    }
+    .insta-logo {
+        margin-left: -1.5%;
     }
 }
     
-.col2 {
+.col2e3 {
     display: flex;
     width: 25%;
-    color: white;
-    list-style: none;
-}
-
-.col3 {
-    display: flex;
-    width: 25%;
+    h1 {
+        margin-bottom: .75em;
+        margin-top: -1em;
+    }
+    li {
+       margin-top: 0.5em;
+    }
 }
 
 .col4 {
@@ -162,9 +166,10 @@ FOOTER SETTINGS
         font-weight: 500;
         size: 20em;
         line-height: 2em;
+        margin-top: -1em;
     }
     .sboxf {
-        height: 2.5em;
+        height: 3em;
         width: 100%;
         border-radius: .25em;
         margin: 1.5em 0;
@@ -177,9 +182,9 @@ FOOTER SETTINGS
         border-radius: .25em;
         background-color: #02897A;
         color: white;
-        width: 40%;
-        height: 2.5em;
-        margin: 1em 0;
+        height: 3em;
+        width: 7.5em;
+        margin: 1.5em 0;
     }
 }
 
@@ -203,30 +208,25 @@ FOOTER MEDIA QUERIES
     }
 
     .col1 {
+        margin-top: 0%;
         margin-left: -2.5%;
         width: 100%;
         .redondo {
             margin-bottom: -1.5%;
-        }
-
-    }
-
-    .col2 {
-        margin-top: 5%;
-        li {
             margin-top: 2%;
+            margin-left: 1.5%;
         }
     }
 
-    .col3 {
-        margin-top: 5%;
+    .col2e3 {
+        margin-top: 10%;
         li {
             margin-top: 2%;
         }
     }
 
     .col4 {
-        margin-top: 5%;
+        margin-top: 10%;
         width: 50%;
         .text-col4 {
             width: 90%;
