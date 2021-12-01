@@ -230,9 +230,11 @@ FOOTER MEDIA QUERIES
     .col4 {
         margin-top: 10%;
         width: 50%;
+        align-items: center;
         .text-col4 {
             width: 90%;
             text-align: center;
+            margin-left: 5%;
         }
     }
 }
