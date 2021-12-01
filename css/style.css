@@ -154,9 +154,9 @@ FOOTER SETTINGS
   display: flex;
   width: 25%;
 }
-.col2e3 h1 {
+.col2e3 h3 {
   margin-bottom: 0.75em;
-  margin-top: -1em;
+  margin-top: -2em;
 }
 .col2e3 li {
   margin-top: 0.5em;
@@ -224,6 +224,8 @@ FOOTER MEDIA QUERIES
   }
 
   .col2e3 {
+    align-items: center;
+    justify-content: center;
     margin-top: 10%;
   }
   .col2e3 li {
