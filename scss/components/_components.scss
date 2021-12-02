@@ -91,6 +91,8 @@ PRODUCT SETTINGS
 ===============
 */
 
+
+
 .container {
     padding: 15px 10%;
     background-color: #1f2e35;
@@ -227,8 +229,6 @@ MEDIA QUERIES PRODUCT
         }
 
         >.products-for-you {
-            //background-image: url("../../assets/backgroundPFU.svg");
-
             h1 {
                 padding-bottom: 4.2rem;
             }
@@ -319,6 +319,16 @@ FOOTER SETTINGS
     background-color: #1f2e35;
     color: #fff;
     margin-top: 100%;
+    
+    .col1 {
+        img {
+            width: 50%;
+        }
+
+        .redondo {
+            width: 10%;
+        }
+    }
 }
 .col1 {
     margin-top: -5%;

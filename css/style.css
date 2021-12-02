@@ -309,6 +309,12 @@ FOOTER SETTINGS
   color: #fff;
   margin-top: 100%;
 }
+.footer .col1 img {
+  width: 50%;
+}
+.footer .col1 .redondo {
+  width: 10%;
+}
 
 .col1 {
   margin-top: -5%;
