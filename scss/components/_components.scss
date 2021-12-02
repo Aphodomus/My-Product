@@ -91,8 +91,6 @@ PRODUCT SETTINGS
 ===============
 */
 
-
-
 .container {
     padding: 15px 10%;
     background-color: #1f2e35;
@@ -190,6 +188,32 @@ PRODUCT SETTINGS
             }
         }
     }
+
+    >.text-image {
+        display: flex;
+        justify-content: space-between;
+
+        >.text {
+            padding: 1rem 0;
+            width: 48%;
+
+            .subtitle {
+                font-weight: bold;
+            }
+
+            p {
+                padding-bottom: 0.8rem;
+            }
+
+            h1 {
+                padding-bottom: 1.3rem;
+            }
+        }
+
+        >.image {
+            width: 48%;
+        }
+    }
 }
 
 /* 
@@ -261,6 +285,20 @@ MEDIA QUERIES PRODUCT
                     @include button-green(0.75rem 2rem);
                     margin-top: 3rem;
                 }
+            }
+        }
+
+        >.text-image {
+            display: flex;
+            flex-direction: column-reverse;
+
+            >.text {
+                width: 100%;
+            }
+            
+            >.image {
+                width: 100%;
+                margin-top: 3rem;
             }
         }
     }

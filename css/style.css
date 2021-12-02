@@ -202,6 +202,26 @@ PRODUCT SETTINGS
   font-size: 16px;
   margin-top: 3rem;
 }
+.container > .text-image {
+  display: flex;
+  justify-content: space-between;
+}
+.container > .text-image > .text {
+  padding: 1rem 0;
+  width: 48%;
+}
+.container > .text-image > .text .subtitle {
+  font-weight: bold;
+}
+.container > .text-image > .text p {
+  padding-bottom: 0.8rem;
+}
+.container > .text-image > .text h1 {
+  padding-bottom: 1.3rem;
+}
+.container > .text-image > .image {
+  width: 48%;
+}
 
 /* 
 =====================
@@ -260,6 +280,17 @@ MEDIA QUERIES PRODUCT
     border-radius: 5px;
     padding: 0.75rem 2rem;
     font-size: 16px;
+    margin-top: 3rem;
+  }
+  .container > .text-image {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container > .text-image > .text {
+    width: 100%;
+  }
+  .container > .text-image > .image {
+    width: 100%;
     margin-top: 3rem;
   }
 }
