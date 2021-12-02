@@ -39,16 +39,16 @@ NAVBAR SETTINGS
 .nav-bar .links a {
   color: #fff;
 }
+.nav-bar .links a:hover {
+  font-weight: 600;
+  font: bold;
+}
 .nav-bar .logo {
   font-size: 14px;
   display: flex;
 }
 .nav-bar .logo .image img {
   width: 40%;
-}
-.nav-bar .logo .title {
-  padding: 0.5rem 0.5rem;
-  font-size: 25px;
 }
 .nav-bar .signIn {
   color: #fff;
@@ -71,6 +71,7 @@ NAVBAR SETTINGS
   display: flex;
   gap: 1em;
   align-items: center;
+  font-weight: 500;
 }
 .menu li {
   padding: 4px 4px;
@@ -92,9 +93,9 @@ input[type=checkbox] {
 }
 
 /* 
-=============
-MEDIA QUERIES
-=============
+====================
+MEDIA QUERIES NAVBAR
+====================
 */
 @media (max-width: 1020px) {
   .menu {
