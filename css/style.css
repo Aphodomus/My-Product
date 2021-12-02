@@ -9,6 +9,10 @@ html {
   color: #fff;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-family: "Poppins";
   font-size: 14px;
@@ -107,11 +111,13 @@ PRODUCT SETTINGS
 }
 .container > .welcome-text-image {
   display: flex;
+  justify-content: space-between;
 }
 .container > .welcome-text-image > .text {
   padding: 3rem 0;
+  width: 50%;
 }
-.container > .welcome-text-image > .text h2 {
+.container > .welcome-text-image > .text > h2 {
   font-family: Poppins;
   font-size: 40px;
   font-style: normal;
@@ -121,7 +127,7 @@ PRODUCT SETTINGS
   text-align: left;
   margin-bottom: 0.6rem;
 }
-.container > .welcome-text-image > .text p {
+.container > .welcome-text-image > .text > p {
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -131,7 +137,61 @@ PRODUCT SETTINGS
   text-align: left;
   margin-bottom: 3rem;
 }
+.container > .welcome-text-image > .text .welcomeFooter {
+  display: flex;
+  align-items: center;
+}
+.container > .welcome-text-image > .text .welcomeFooter .getStarted {
+  color: #fff;
+  background-color: #02897A;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+}
+.container > .welcome-text-image > .text .welcomeFooter .watch {
+  display: flex;
+  margin-left: 1.5rem;
+}
+.container > .welcome-text-image > .text .welcomeFooter .watch img {
+  padding-right: 0.5rem;
+  max-width: 20px;
+}
+.container > .welcome-text-image > .text .welcomeFooter .watch p {
+  color: #02897A;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.container > .welcome-text-image > .image {
+  width: 50%;
+}
 
+/* 
+=====================
+MEDIA QUERIES PRODUCT
+=====================
+*/
+@media (max-width: 1200px) {
+  .container > .welcome-text-image {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container > .welcome-text-image > .text {
+    width: 100%;
+  }
+  .container > .welcome-text-image > .text h2 {
+    text-align: center;
+  }
+  .container > .welcome-text-image > .text p {
+    text-align: center;
+  }
+  .container > .welcome-text-image > .text > .welcomeFooter {
+    justify-content: center;
+  }
+  .container > .welcome-text-image > .image {
+    width: 100%;
+  }
+}
 /* 
 ====================
 MEDIA QUERIES NAVBAR

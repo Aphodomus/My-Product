@@ -44,12 +44,7 @@ NAVBAR SETTINGS
     }
 
     .signUp {
-        color: #fff;
-        background-color: #02897A;
-        border: 1px solid #fff;
-        border-radius: 5px;
-        padding: 0.75rem 2rem;
-        font-size: 16px;
+        @include button-green(0.75rem 2rem)
     }
 }
 
@@ -92,11 +87,13 @@ PRODUCT SETTINGS
 
     >.welcome-text-image {
         display: flex;
+        justify-content: space-between;
 
         >.text {
             padding: 3rem 0;
+            width: 50%;
 
-            h2 {
+            > h2 {
                 font-family: Poppins;
                 font-size: 40px;
                 font-style: normal;
@@ -107,7 +104,7 @@ PRODUCT SETTINGS
                 margin-bottom: 0.6rem;
             }
 
-            p {
+            > p {
                 font-family: Poppins;
                 font-size: 18px;
                 font-style: normal;
@@ -117,9 +114,75 @@ PRODUCT SETTINGS
                 text-align: left;
                 margin-bottom: 3rem;
             }
+
+            .welcomeFooter {
+                display: flex;
+                align-items: center;
+
+                .getStarted {
+                    @include button-green(0.75rem 2rem)
+                }
+
+                .watch {
+                    display: flex;
+                    margin-left: 1.5rem;
+
+                    img {
+                        padding-right: 0.5rem;
+                        max-width: 20px;
+                    }
+
+                    p {
+                        color: #02897A;
+                        text-decoration: underline;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        >.image {
+            width: 50%;
+        }
+    }
+
+    
+}
+
+/* 
+=====================
+MEDIA QUERIES PRODUCT
+=====================
+*/
+
+@media (max-width: 1200px) {
+    .container {
+        >.welcome-text-image {
+            display: flex;
+            flex-direction: column-reverse;
+
+            >.text {
+                width: 100%;
+
+                h2 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                >.welcomeFooter {
+                    justify-content: center;
+                }
+            }
+            >.image {
+                width: 100%;
+            }
         }
     }
 }
+
 
 /* 
 ====================
