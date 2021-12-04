@@ -255,6 +255,49 @@ PRODUCT SETTINGS
   margin-right: 1.4rem;
   margin-bottom: 2rem;
 }
+.container > .quick-process > .title {
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.container > .quick-process > .subtitle {
+  text-align: center;
+  font-weight: 500;
+  padding: 0px 20%;
+  padding-bottom: 1rem;
+}
+.container > .quick-process > .content {
+  display: flex;
+  justify-content: space-between;
+}
+.container > .quick-process > .content img {
+  width: 25%;
+}
+.container > .quick-process > .content p {
+  color: black;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0.2rem 1.3rem;
+  margin: 0.7rem;
+}
+.container > .quick-process > .content > .item > .card {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.container > .quick-process > .contactExpert {
+  text-align: center;
+}
+.container > .quick-process > .contactExpert button {
+  color: #fff;
+  background-color: #02897A;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+  margin-top: 2rem;
+}
 
 /* 
 =====================

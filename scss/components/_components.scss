@@ -258,6 +258,56 @@ PRODUCT SETTINGS
             }
         }
     }
+
+    >.quick-process {
+        >.title {
+            font-weight: 700;
+            line-height: 48px;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        >.subtitle {
+            text-align: center;
+            font-weight: 500;
+            padding: 0px 20%;
+            padding-bottom: 1rem;
+        }
+
+        >.content {
+            display: flex;
+            justify-content: space-between;
+
+           img {
+               width: 25%;
+           }
+
+           p {
+               color: black;
+               background-color: #fff;
+               border-radius: 15px;
+               padding: 0.2rem 1.3rem;
+               margin: 0.7rem;
+           }
+
+           >.item {
+               >.card {
+                   display: flex;
+                   padding: 1rem;
+                   align-items: center;
+               }
+           }
+        }
+
+        >.contactExpert {
+            text-align: center;
+
+            button {
+                @include button-green(0.75rem 2rem);
+                margin-top: 2rem;
+            }
+        }
+    }
 }
 
 /* 
