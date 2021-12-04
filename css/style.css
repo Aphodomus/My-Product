@@ -222,6 +222,22 @@ PRODUCT SETTINGS
 .container > .text-image > .image {
   width: 48%;
 }
+.container > .image-text {
+  display: flex;
+  justify-content: space-between;
+}
+.container > .image-text > .image {
+  width: 48%;
+}
+.container > .image-text .text {
+  width: 48%;
+}
+.container > .image-text .text > .content > .item {
+  display: flex;
+}
+.container > .image-text .text > .content > .item img {
+  width: 35px;
+}
 
 /* 
 =====================
