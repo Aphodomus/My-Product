@@ -232,6 +232,17 @@ PRODUCT SETTINGS
 .container > .image-text .text {
   width: 48%;
 }
+.container > .image-text .text > .subtitle {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.container > .image-text .text h1 {
+  margin-bottom: 1.7rem;
+}
+.container > .image-text .text > .description {
+  margin-bottom: 1.7rem;
+  width: 70%;
+}
 .container > .image-text .text > .content > .item {
   display: flex;
 }
