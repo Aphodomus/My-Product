@@ -6,6 +6,7 @@ DEFAULT SETTINGS
 
 .wrapper {
     padding-bottom: 9.5rem;
+    margin: 15px 10%;
 }
 
 /* 
@@ -233,6 +234,8 @@ PRODUCT SETTINGS
 
             h1 {
                 margin-bottom: 1.7rem;
+                font-weight: 700;
+                line-height: 48px;
             }
 
             >.description {
@@ -244,9 +247,12 @@ PRODUCT SETTINGS
 
                 >.item {
                     display: flex;
+                    width: 75%;
 
                     img {
                         width: 35px;
+                        margin-right: 1.4rem;
+                        margin-bottom: 2rem;
                     }
                 }
             }
@@ -338,6 +344,20 @@ MEDIA QUERIES PRODUCT
             >.image {
                 width: 100%;
                 margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        >.image-text {
+            display: inline;
+
+            >.image {
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+
+            >.text {
+                width: 100%;
             }
         }
     }
