@@ -410,6 +410,42 @@ MEDIA QUERIES PRODUCT
                 width: 100%;
             }
         }
+
+        >.quick-process {
+            >.subtitle {
+                padding: 0px 1%;
+            }
+    
+            >.content {
+                display: inline;
+                
+                .reverse {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+
+                img {
+                    width: 25%;
+                }
+        
+                p {
+                    text-align: center;
+                    color: black;
+                    background-color: #fff;
+                    border-radius: 15px;
+                    padding: 0.2rem 1.3rem;
+                    margin: 0.3rem;
+                }
+        
+                >.item {
+                    >.card {
+                        display: flex;
+                        padding: 1rem;
+                        align-items: center;
+                    }
+                }
+            }
+        }
     }
 }
 

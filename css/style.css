@@ -380,6 +380,32 @@ MEDIA QUERIES PRODUCT
   .container > .image-text > .text {
     width: 100%;
   }
+  .container > .quick-process > .subtitle {
+    padding: 0px 1%;
+  }
+  .container > .quick-process > .content {
+    display: inline;
+  }
+  .container > .quick-process > .content .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container > .quick-process > .content img {
+    width: 25%;
+  }
+  .container > .quick-process > .content p {
+    text-align: center;
+    color: black;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0.2rem 1.3rem;
+    margin: 0.3rem;
+  }
+  .container > .quick-process > .content > .item > .card {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+  }
 }
 /* 
 ====================
