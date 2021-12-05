@@ -353,6 +353,23 @@ PRODUCT SETTINGS
   justify-content: space-between;
   margin-top: 5rem;
 }
+.container > .price-table > .cards #change {
+  background: #02897A;
+  color: #fff;
+}
+.container > .price-table > .cards #change > .price > .value {
+  color: #fff;
+}
+.container > .price-table > .cards #change > .price > .simbol > .dolar {
+  color: #fff;
+}
+.container > .price-table > .cards #change > .item {
+  color: #fff;
+}
+.container > .price-table > .cards #change button {
+  background: #fff;
+  color: #02897A;
+}
 .container > .price-table > .cards > .card {
   background: #fff;
   color: black;
@@ -364,6 +381,7 @@ PRODUCT SETTINGS
   font-weight: 700;
   line-height: 40px;
   font-size: 1rem;
+  padding-top: 1rem;
 }
 .container > .price-table > .cards > .card > .subtitle {
   font-size: 0.8rem;
@@ -532,6 +550,16 @@ MEDIA QUERIES PRODUCT
   }
   .container > .contents-strategies > .carosolt {
     display: none;
+  }
+  .container > .price-table {
+    margin-top: 3rem;
+  }
+  .container > .price-table > .cards {
+    display: inline;
+  }
+  .container > .price-table > .cards > .card {
+    width: 100%;
+    margin: 1rem 0;
   }
 }
 /* 

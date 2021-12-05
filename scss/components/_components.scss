@@ -378,6 +378,31 @@ PRODUCT SETTINGS
             justify-content: space-between;
             margin-top: 5rem;
 
+            #change {
+                background: #02897A;
+                color: #fff;
+                >.price {
+                    >.value {
+                        color: #fff;
+                    }
+
+                    >.simbol {
+                        >.dolar {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                >.item {
+                    color: #fff;
+                }
+
+                button {
+                    background: #fff;
+                    color: #02897A;
+                }
+            }
+
             >.card {
                 background: #fff;
                 color: black;
@@ -389,6 +414,7 @@ PRODUCT SETTINGS
                     font-weight: 700;
                     line-height: 40px;
                     font-size: 1rem;
+                    padding-top: 1rem;
                 }
 
                 >.subtitle {
@@ -598,6 +624,19 @@ MEDIA QUERIES PRODUCT
     
             >.carosolt {
                 display: none;
+            }
+        }
+
+        >.price-table {
+            margin-top: 3rem;
+
+            >.cards {
+                display: inline;
+    
+                >.card {
+                    width: 100%;
+                    margin: 1rem 0;
+                }
             }
         }
     }
