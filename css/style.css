@@ -298,7 +298,40 @@ PRODUCT SETTINGS
   font-size: 16px;
   margin-top: 2rem;
 }
-
+.container > .contents-strategies > .title {
+  font-weight: 700;
+  line-height: 51px;
+}
+.container > .contents-strategies > .subtitle {
+  font-weight: 500;
+}
+.container > .contents-strategies > .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.container > .contents-strategies > .cards > .card {
+  background-color: #fff;
+  color: black;
+  border-radius: 8px;
+  width: 32%;
+}
+.container > .contents-strategies > .cards > .card > .image {
+  width: 33;
+}
+.container > .contents-strategies > .cards > .card > .content {
+  padding: 1rem;
+  padding-top: 0.1rem;
+}
+.container > .contents-strategies > .cards > .card > .content > .credits {
+  padding-bottom: 0.25rem;
+}
+.container > .contents-strategies > .cards > .card > .content > .title a {
+  color: black;
+}
+.container > .contents-strategies > .cards > .card > .content > .title a:hover {
+  color: #02897A;
+}
 /* 
 =====================
 MEDIA QUERIES PRODUCT

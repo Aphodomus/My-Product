@@ -308,6 +308,57 @@ PRODUCT SETTINGS
             }
         }
     }
+
+    >.contents-strategies {
+        >.title {
+            font-weight: 700;
+            line-height: 51px;
+        }
+
+        >.subtitle {
+            font-weight: 500;
+        }
+
+        >.cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+
+            >.card {
+                background-color: #fff;
+                color: black;
+                border-radius: 8px;
+                width: 32%;
+
+                >.image {
+                    width: 33;
+                }
+
+                >.content {
+                    padding: 1rem;
+                    padding-top: 0.1rem;
+
+                    >.credits {
+                        padding-bottom: 0.25rem;
+                    }
+
+                    >.title {
+                        a {
+                            color: black;
+
+                            &:hover {
+                                color: #02897A;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >.carosolt {
+            
+        }
+    }
 }
 
 /* 
