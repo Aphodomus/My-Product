@@ -316,9 +316,6 @@ PRODUCT SETTINGS
   border-radius: 8px;
   width: 32%;
 }
-.container > .contents-strategies > .cards > .card > .image {
-  width: 33;
-}
 .container > .contents-strategies > .cards > .card > .content {
   padding: 1rem;
   padding-top: 0.1rem;
@@ -332,6 +329,18 @@ PRODUCT SETTINGS
 .container > .contents-strategies > .cards > .card > .content > .title a:hover {
   color: #02897A;
 }
+.container > .contents-strategies > .carosolt {
+  text-align: center;
+}
+.container > .contents-strategies > .carosolt .dot {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 4rem 0.2rem;
+  display: inline-block;
+}
+
 /* 
 =====================
 MEDIA QUERIES PRODUCT
@@ -438,6 +447,20 @@ MEDIA QUERIES PRODUCT
     display: flex;
     padding: 1rem;
     align-items: center;
+  }
+  .container > .contents-strategies > .cards {
+    display: inline;
+    margin-top: 1.5rem;
+  }
+  .container > .contents-strategies > .cards > .card {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .container > .contents-strategies > .cards > .card > .content {
+    padding-top: 0.1rem;
+  }
+  .container > .contents-strategies > .carosolt {
+    display: none;
   }
 }
 /* 
