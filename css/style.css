@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -350,21 +351,65 @@ PRODUCT SETTINGS
 .container > .price-table > .cards {
   display: flex;
   justify-content: space-between;
+  margin-top: 5rem;
 }
-.container > .price-table > .cards .card {
+.container > .price-table > .cards > .card {
   background: #fff;
   color: black;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  width: 32%;
+  width: 28%;
 }
-.container > .price-table > .cards .card > .title {
+.container > .price-table > .cards > .card > .title {
   font-weight: 700;
   line-height: 40px;
   font-size: 1rem;
 }
-.container > .price-table > .cards .card > .subtitle {
+.container > .price-table > .cards > .card > .subtitle {
   font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.container > .price-table > .cards > .card > .price {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding-bottom: 2rem;
+}
+.container > .price-table > .cards > .card > .price > .value {
+  padding: auto;
+  font-size: 4.5rem;
+  padding-top: 0.9rem;
+  color: #02897A;
+  font-weight: 700;
+}
+.container > .price-table > .cards > .card > .price > .simbol {
+  text-align: left;
+  margin-left: 0.4rem;
+}
+.container > .price-table > .cards > .card > .price > .simbol .dolar {
+  font-size: 1.2rem;
+  color: #02897A;
+  font-weight: bold;
+}
+.container > .price-table > .cards > .card > .price > .simbol .frequency {
+  font-weight: 400;
+  line-height: 19px;
+  color: #AFAFAF;
+}
+.container > .price-table > .cards > .card > .item {
+  padding: 0.3rem 0;
+  font-weight: 800;
+  color: #22343D;
+}
+.container > .price-table > .cards > .card button {
+  color: #fff;
+  background-color: #02897A;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* 
