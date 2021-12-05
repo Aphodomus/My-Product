@@ -450,6 +450,43 @@ PRODUCT SETTINGS
   display: inline-block;
 }
 
+.container > .price-table {
+  text-align: center;
+}
+
+.container > .price-table > .title {
+  font-weight: 700;
+  line-height: 51px;
+}
+
+.container > .price-table > .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container > .price-table > .cards .card {
+  background: #fff;
+  color: black;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 32%;
+}
+
+.container > .price-table > .cards .card > .title {
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 1rem;
+}
+
+.container > .price-table > .cards .card > .subtitle {
+  font-size: 0.8rem;
+}
+
 /* 
 =====================
 MEDIA QUERIES PRODUCT
