@@ -338,5 +338,10 @@ FIRST DIV
 .cointainer1 .cont-col1 .join-over span {
   color: #02897A;
 }
+.cointainer1 .cont-col2 {
+  display: flex;
+  height: 35em;
+  width: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
