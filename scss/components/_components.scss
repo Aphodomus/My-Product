@@ -561,6 +561,40 @@ PRODUCT SETTINGS
             }
         }
     }
+
+    >.get-this {
+        display: flex;
+        justify-content: space-between;
+        background: #02897A;
+        border-radius: 32px;
+        padding: 0.5rem;
+
+        >.content {
+            width: 59%;
+            padding: 2rem;
+
+            >.title {
+                font-size: 32px;
+                line-height: 151.4%;
+            }
+
+            >.getThis {
+                button {
+                    @include button-green(0.75rem 2rem);
+                    background: #fff;
+                    color: #02897A;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    line-height: 30px;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+
+        >.image {
+            width: 45%;
+        }
+    }
 }
 
 /* 
