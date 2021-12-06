@@ -783,6 +783,24 @@ MEDIA QUERIES PRODUCT
                 }
             }
         }
+
+        >.get-this {
+            display: inline-block;
+            text-align: center;
+            padding: 0;
+            background: #02897A;
+            border-radius: 15px;
+        
+            >.content {
+                width: 100%;
+                //background: #02897A;
+            }
+    
+            >.image {
+                width: 100%;
+                //background: #02897A;
+            }
+        }
     }
 }
 

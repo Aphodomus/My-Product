@@ -681,6 +681,19 @@ MEDIA QUERIES PRODUCT
     margin-bottom: 1rem;
     text-align: left;
   }
+  .container > .get-this {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    background: #02897A;
+    border-radius: 15px;
+  }
+  .container > .get-this > .content {
+    width: 100%;
+  }
+  .container > .get-this > .image {
+    width: 100%;
+  }
 }
 /* 
 ====================
