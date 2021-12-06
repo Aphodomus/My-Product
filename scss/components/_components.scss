@@ -471,12 +471,24 @@ PRODUCT SETTINGS
 
     >.whats-client {
         >.comments {
+            display: flex;
+            justify-content: space-between;
+
             >.card {
+                background: #fff;
+                border: 1px solid #DEDEDE;
+                box-sizing: border-box;
+                border-radius: 5px;
+                width: 31%;
+                padding: 1rem;
+
                 >.starRating {
                     display: flex;
+                    justify-content: left;
                     align-items: center;
                     width: 160px;
                     flex-direction: row-reverse;
+                    padding-bottom: 0.5rem;
 
                     input {
                         display: none;
@@ -498,6 +510,37 @@ PRODUCT SETTINGS
                             position: relative;
                             top: 0px;
                             line-height: 26px;
+                        }
+                    }
+                }
+
+                >.comment {
+                    padding-bottom: 0.5rem;
+
+                    p {
+                        color: #737373;
+                    }
+                }
+
+                >.person {
+                    display: flex;
+                    justify-content: left;
+
+                    img {
+                        width: 20%;
+                    }
+
+                    >.information {
+                        margin-left: 0.8rem;
+
+                        >.name {
+                            color: #02897A;
+                            font-weight: 600;
+
+                        }
+
+                        >.job {
+                            color: #252B42;
                         }
                     }
                 }
