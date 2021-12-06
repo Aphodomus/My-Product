@@ -256,3 +256,54 @@ FOOTER MEDIA QUERIES
         padding-top: -8%;
     }
 }
+
+/* 
+=============
+FIRST DIV
+=============
+*/
+
+.cointainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7em;
+    .cont-col1 {
+        .st-title {
+            color: white;
+            font-weight: 600;
+            font-size: 4.5em;
+            line-height: 149%;
+        }
+        .st-subtitle {
+            color: white;
+            font-weight: 400;
+            font-size: 2.25em;
+            line-height: 160%;
+        }
+        .box-mail1{
+            background-color: #1f2e35;
+            border: solid .1em white;
+            border-radius: 3em;
+            width: 33.5em;
+            height: 3.75em;
+            .join-now-box {
+                background-color: transparent;
+                border: none;
+                font-weight: 400;
+                font-size: 1.15em;
+                letter-spacing: -0.03em;
+            }
+            .join-now-bt {
+                background-color: #02897A;
+                border-radius: 3em;
+                color: white;
+                padding: 1em 1.75em;
+                text-align: center;
+                text-decoration: none;
+                border: none;
+                margin-top: .27em;
+            }
+        }    
+    }
+}
