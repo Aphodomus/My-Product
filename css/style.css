@@ -637,6 +637,18 @@ MEDIA QUERIES PRODUCT
     width: 100%;
     margin: 1rem 0;
   }
+  .container > .whats-client > .subtitle {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .container > .whats-client > .comments {
+    display: inline;
+  }
+  .container > .whats-client > .comments > .card {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
 }
 /* 
 ====================

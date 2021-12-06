@@ -732,6 +732,23 @@ MEDIA QUERIES PRODUCT
                 }
             }
         }
+
+        >.whats-client {
+            >.subtitle {
+                padding: 0;
+                margin-bottom: 1rem;
+            }
+
+            >.comments {
+                display: inline;
+
+                >.card {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                }
+            }
+        }
     }
 }
 
