@@ -468,6 +468,42 @@ PRODUCT SETTINGS
             }
         }
     }
+
+    >.whats-client {
+        >.comments {
+            >.card {
+                >.starRating {
+                    display: flex;
+                    align-items: center;
+                    width: 160px;
+                    flex-direction: row-reverse;
+
+                    input {
+                        display: none;
+                    }
+
+                    input:checked ~ label:before {
+                        content: '\2605';
+                    }
+
+                    > label {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 30px;
+                        color: orange;
+                        font-family: Verdana;
+
+                        &::before {
+                            content: '\2606';
+                            position: relative;
+                            top: 0px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* 
