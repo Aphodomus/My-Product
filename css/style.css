@@ -271,7 +271,10 @@ FIRST DIV
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7em;
+  gap: 1em;
+  width: 95%;
+  max-width: 110em;
+  margin: 7em auto;
 }
 .cointainer1 .cont-col1 .st-title {
   color: white;
@@ -284,8 +287,10 @@ FIRST DIV
   font-weight: 400;
   font-size: 2.25em;
   line-height: 160%;
+  margin-top: 1.5em;
 }
 .cointainer1 .cont-col1 .box-mail1 {
+  margin-top: 2em;
   background-color: #1f2e35;
   border: solid 0.1em white;
   border-radius: 3em;
@@ -295,9 +300,12 @@ FIRST DIV
 .cointainer1 .cont-col1 .box-mail1 .join-now-box {
   background-color: transparent;
   border: none;
+  border-radius: 3em;
   font-weight: 400;
   font-size: 1.15em;
   letter-spacing: -0.03em;
+  width: 22em;
+  height: 3em;
 }
 .cointainer1 .cont-col1 .box-mail1 .join-now-bt {
   background-color: #02897A;
@@ -308,6 +316,27 @@ FIRST DIV
   text-decoration: none;
   border: none;
   margin-top: 0.27em;
+  margin-right: 0.3em;
+  float: right;
+}
+.cointainer1 .cont-col1 .join-images {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+}
+.cointainer1 .cont-col1 .guy2 {
+  transform: translateX(-50%);
+}
+.cointainer1 .cont-col1 .guy3 {
+  transform: translateX(-90%);
+}
+.cointainer1 .cont-col1 .join-over {
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+}
+.cointainer1 .cont-col1 .join-over span {
+  color: #02897A;
 }
 
 /*# sourceMappingURL=style.css.map */

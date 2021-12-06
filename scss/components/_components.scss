@@ -267,7 +267,10 @@ FIRST DIV
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7em;
+    gap: 1em;
+    width: 95%;
+    max-width: 110em;
+    margin: 7em auto;
     .cont-col1 {
         .st-title {
             color: white;
@@ -280,8 +283,10 @@ FIRST DIV
             font-weight: 400;
             font-size: 2.25em;
             line-height: 160%;
+            margin-top: 1.5em;
         }
         .box-mail1{
+            margin-top: 2em;
             background-color: #1f2e35;
             border: solid .1em white;
             border-radius: 3em;
@@ -290,9 +295,12 @@ FIRST DIV
             .join-now-box {
                 background-color: transparent;
                 border: none;
+                border-radius: 3em;
                 font-weight: 400;
                 font-size: 1.15em;
                 letter-spacing: -0.03em;
+                width: 22em;
+                height: 3em;
             }
             .join-now-bt {
                 background-color: #02897A;
@@ -303,7 +311,31 @@ FIRST DIV
                 text-decoration: none;
                 border: none;
                 margin-top: .27em;
+                margin-right: .3em;
+                float: right;
+            }
+        }
+        .join-images {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5em;
+        }
+        .guy2 {
+            transform: translateX(-50%);
+        }
+        .guy3 {
+            transform: translateX(-90%);
+        }
+        .join-over {
+            color: white;
+            font-weight: 500;
+            font-size: 1em;
+            span {
+                color: #02897A;
             }
         }    
+    }
+    .cont-col2 {
+
     }
 }
