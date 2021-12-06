@@ -430,9 +430,22 @@ PRODUCT SETTINGS
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.container > .whats-client {
+  text-align: center;
+}
+.container > .whats-client > .title {
+  padding-bottom: 1rem;
+}
+.container > .whats-client > .subtitle {
+  text-align: center;
+  font-weight: 500;
+  padding: 0px 26%;
+  padding-bottom: 1rem;
+}
 .container > .whats-client > .comments {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 .container > .whats-client > .comments > .card {
   background: #fff;
