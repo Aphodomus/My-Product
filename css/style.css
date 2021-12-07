@@ -14,6 +14,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
   background-color: #1F2E35;
+  overflow-x: hidden;
 }
 
 a {
@@ -218,7 +219,7 @@ FOOTER MEDIA QUERIES
     left: 0;
     text-align: center;
     padding: 16px 0;
-    margin-top: 100%;
+    margin-top: 20%;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -346,6 +347,48 @@ FIRST DIV
 }
 
 /* 
+==============================
+FIRST DIV - MEDIA QUERIES
+==============================
+*/
+@media (max-width: 1020px) {
+  .cointainer1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    max-width: 20%;
+    margin: 3em auto;
+  }
+  .cointainer1 .cont-col1 .st-title {
+    font-size: 3em;
+  }
+  .cointainer1 .cont-col1 .st-subtitle {
+    font-size: 1.7em;
+    margin-top: 1em;
+  }
+  .cointainer1 .cont-col1 .box-mail1 {
+    width: 25em;
+    height: 4em;
+  }
+  .cointainer1 .cont-col1 .box-mail1 .join-now-box {
+    padding: 1.7em 1em;
+  }
+  .cointainer1 .cont-col1 .box-mail1 .join-now-bt {
+    margin-top: -3.8em;
+    padding: 1.15em 3em;
+    font-weight: 700;
+  }
+  .cointainer1 .cont-col1 .join-over {
+    margin-left: -2.7em;
+  }
+
+  .cont-col2 {
+    margin-top: 5em;
+    max-height: 21em;
+  }
+}
+/* 
 ===============
 SECOND SECTION
 ===============
@@ -428,6 +471,29 @@ SECOND SECTION - DOWN CARDS
 }
 
 /* 
+=======================================
+SECOND SECTION - MEDIA QUERIES GENERAL
+=======================================
+*/
+@media (max-width: 1020px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bf-cards {
+    margin-top: 5em;
+    margin: auto 3em;
+  }
+  .bf-cards .second-title {
+    margin-bottom: 0.4em;
+  }
+
+  .aft-cards {
+    margin-bottom: 8em;
+  }
+}
+/* 
 ============================
 THRID SECTION - CONTACT US
 ============================
@@ -472,6 +538,25 @@ THRID SECTION - CONTACT US
   margin-bottom: 4em;
 }
 
+/* 
+=======================================
+THRID SECTION - MEDIA QUERIES GENERAL
+=======================================
+*/
+@media (max-width: 1020px) {
+  .social-media {
+    margin-top: 2em;
+  }
+
+  .map {
+    max-width: 90%;
+    max-height: 3em;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5em;
+    margin-top: 14em;
+  }
+}
 /* 
 ==============
 FORM SETTINGS
@@ -526,6 +611,33 @@ FORM SETTINGS
   align-items: center;
   padding: 1.2em 2.5em;
   margin: 0.8em auto;
+}
+
+/* 
+==============================
+FORM SECTION - MEDIA QUERIES
+==============================
+*/
+@media (max-width: 1020px) {
+  .form-bg {
+    background-color: #1f2e35;
+  }
+
+  .send-msg {
+    margin-top: 7em;
+  }
+
+  .name-mail {
+    max-width: 25em;
+  }
+
+  .msg {
+    width: 25em;
+  }
+
+  .button {
+    width: 9.5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
