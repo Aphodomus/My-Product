@@ -1,0 +1,8 @@
+@mixin button-green($padding) {
+    color: #fff;
+    background-color: #02897A;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: $padding;
+    font-size: 16px;
+}
