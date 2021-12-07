@@ -349,5 +349,20 @@ FIRST DIV
 SECOND SECTION
 ===============
 */
+.bf-cards {
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+.bf-cards .second-title {
+  font-weight: 700;
+  font-size: 2.25em;
+  line-height: 1.75em;
+}
+.bf-cards .second-subtitle {
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.375em;
+}
 
 /*# sourceMappingURL=style.css.map */
