@@ -411,3 +411,17 @@ SECOND SECTION - CARDS
         }    
     }
 }
+
+/* 
+============================
+SECOND SECTION - DOWN CARDS
+============================
+*/
+
+.aft-cards {
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: .75em;
+    margin-top: 3em;
+}

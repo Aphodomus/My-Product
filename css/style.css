@@ -412,4 +412,17 @@ SECOND SECTION - CARDS
   margin-right: 1.5em;
 }
 
+/* 
+============================
+SECOND SECTION - DOWN CARDS
+============================
+*/
+.aft-cards {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 0.75em;
+  margin-top: 3em;
+}
+
 /*# sourceMappingURL=style.css.map */
