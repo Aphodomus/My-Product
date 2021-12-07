@@ -223,6 +223,8 @@ PRODUCT SETTINGS
     }
 
     >.enterprise-div {
+        text-align: center;
+
         >.preTitle {
             font-weight: 600;
             font-size: 24px;
@@ -236,7 +238,14 @@ PRODUCT SETTINGS
         }
 
         >.text {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+        }
 
+        button {
+            @include button-green(0.75rem 2rem);
+            margin-top: 2rem;
         }
     }
 }
@@ -247,6 +256,15 @@ PRODUCT SETTINGS
 MEDIA QUERIES NAVBAR
 ====================
 */
+
+@media (max-width: 1200px) {
+    .wrapper {
+        padding-bottom: 4.5rem;
+    }
+
+    .container {
+        
+}
 
 @media (max-width: 1020px) {
     .menu {
