@@ -6,6 +6,7 @@
 }
 
 body {
+  color: #fff;
   font-family: "Poppins";
   font-size: 14px;
   font-style: normal;
@@ -113,7 +114,6 @@ PRODUCT SETTINGS
 }
 .container > .price-table {
   text-align: center;
-  color: #fff;
 }
 .container > .price-table > .preTitle {
   font-weight: 600;
@@ -213,7 +213,16 @@ PRODUCT SETTINGS
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
+.container > .enterprise-div > .preTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.container > .enterprise-div > .title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+}
 /* 
 ====================
 MEDIA QUERIES NAVBAR

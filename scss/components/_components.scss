@@ -105,7 +105,6 @@ PRODUCT SETTINGS
 
     >.price-table {
         text-align: center;
-        color: #fff;
 
         >.preTitle {
             font-weight: 600;
@@ -220,6 +219,24 @@ PRODUCT SETTINGS
                     margin-bottom: 2rem;
                 }
             }
+        }
+    }
+
+    >.enterprise-div {
+        >.preTitle {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        >.title {
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 51px;
+        }
+
+        >.text {
+
         }
     }
 }
