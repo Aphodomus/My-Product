@@ -282,14 +282,26 @@ PRODUCT SETTINGS
   font-size: 16px;
   line-height: 28px;
 }
+.container > .frequently-asked > .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+}
+.container > .frequently-asked > .subtitle {
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
 .container > .frequently-asked *::before, .container > .frequently-asked ::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 .container > .frequently-asked > .cont > .accordion > .item {
-  border-radius: 0.4rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #474747;
   padding: 1rem;
   box-shadow: 0.5rem;
 }
@@ -300,8 +312,8 @@ PRODUCT SETTINGS
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
+  justify-content: left;
+  padding: 1rem 1rem;
 }
 .container > .frequently-asked > .cont > .accordion > .item > .link i {
   color: #02897A;
@@ -313,6 +325,17 @@ PRODUCT SETTINGS
 .container > .frequently-asked > .cont > .accordion > .item > .answer {
   max-height: 0;
   overflow: hidden;
+  position: relative;
+  transition: max-height 650ms;
+}
+.container > .frequently-asked > .cont > .accordion > .item:target .answer {
+  max-height: 10rem;
+}
+.container > .frequently-asked > .cont > .accordion > .item:target .link .fa-plus-circle {
+  display: none;
+}
+.container > .frequently-asked > .cont > .accordion > .item:target .link .fa-minus-circle {
+  display: block;
 }
 
 /* 
