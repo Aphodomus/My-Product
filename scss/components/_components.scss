@@ -424,4 +424,32 @@ SECOND SECTION - DOWN CARDS
     justify-content: center;
     gap: .75em;
     margin-top: 3em;
+    margin-bottom: 15em;
+}
+
+/* 
+============================
+THRID SECTION - CONTACT US
+============================
+*/
+
+.thrid-section-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .thrid-section-text-principal {
+        font-weight: 700;
+        font-size: 2.25em;
+        line-height: 1.9em;
+        letter-spacing: 0.03em;
+        margin-bottom: .7em;
+    }
+    .thrid-section-text-secondary {
+        font-weight: 500;
+        font-size: 1.35em;
+        line-height: 1.75em;
+        letter-spacing: 0.03em;
+    }
 }
