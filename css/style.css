@@ -370,7 +370,7 @@ SECOND SECTION
 SECOND SECTION - CARDS
 =======================
 */
-.cards .card1 {
+.cards .card {
   width: 25em;
   display: flex;
   margin-left: auto;
@@ -381,10 +381,10 @@ SECOND SECTION - CARDS
   border-radius: 2%;
   margin-top: 4em;
 }
-.cards .card1 .image-card {
+.cards .card .image-card {
   border-radius: 2%;
 }
-.cards .card1 .info-card {
+.cards .card .info-card {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 1.9em;
@@ -392,10 +392,10 @@ SECOND SECTION - CARDS
   margin-bottom: 1.2em;
   margin-left: 1.3em;
 }
-.cards .card1 .info-card .bold-name {
+.cards .card .info-card .bold-name {
   font-weight: 700;
 }
-.cards .card1 .text-card {
+.cards .card .text-card {
   color: #22343D;
   font-weight: 700;
   font-size: 1.7em;
