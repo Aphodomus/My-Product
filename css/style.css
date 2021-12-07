@@ -257,6 +257,9 @@ PRODUCT SETTINGS
   width: 44%;
   margin-left: 2rem;
 }
+.container > .product-being > .content > .cards > .card {
+  margin-bottom: 1.5rem;
+}
 .container > .product-being > .content > .cards > .card > .imageTitle {
   display: flex;
   justify-content: left;
@@ -267,6 +270,10 @@ PRODUCT SETTINGS
 }
 .container > .product-being > .content > .cards > .card > .imageTitle > .title {
   margin-left: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
 }
 .container > .product-being > .content > .cards > .card > .description {
   margin-top: 1rem;
