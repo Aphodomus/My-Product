@@ -309,6 +309,50 @@ MEDIA QUERIES NAVBAR
   .container > .enterprise-div > .title {
     margin-bottom: 1.5rem;
   }
+  .container > .product-being > .title {
+    text-align: center;
+  }
+  .container > .product-being > .content {
+    margin-top: 3rem;
+    display: inline-block;
+    justify-content: space-between;
+  }
+  .container > .product-being > .content img {
+    width: 100%;
+  }
+  .container > .product-being > .content > .image {
+    content: url("../../assets/product2-image.svg");
+  }
+  .container > .product-being > .content > .cards {
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 2rem;
+  }
+  .container > .product-being > .content > .cards > .card {
+    margin-bottom: 1.5rem;
+  }
+  .container > .product-being > .content > .cards > .card > .imageTitle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .container > .product-being > .content > .cards > .card > .imageTitle img {
+    width: 10%;
+  }
+  .container > .product-being > .content > .cards > .card > .imageTitle > .title {
+    margin-left: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .container > .product-being > .content > .cards > .card > .description {
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 @media (max-width: 1020px) {
   .menu {
@@ -349,7 +393,6 @@ FOOTER SETTINGS
   padding: 5em 10%;
   background-color: #1f2e35;
   color: #fff;
-  margin-top: 100%;
 }
 
 .col1 {
