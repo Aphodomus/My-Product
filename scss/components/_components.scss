@@ -371,7 +371,11 @@ SECOND SECTION - CARDS
 */
 
 .cards {
-
+    display: grid;
+    grid-template-columns: repeat(3, 30em);
+    grid-template-rows: repeat(3, em);
+    width: 100%;
+    justify-content: center;
     .card {
         width: 25em;
         display: flex;
