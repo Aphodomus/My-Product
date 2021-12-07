@@ -480,8 +480,11 @@ FORM SETTINGS
 */
 
 .form-bg {
+    width: 100%;
+    max-width: 63em;
+    margin: 0 auto;
     border-radius: 2.5em;
-    padding: 2em;
+    padding: 4em;
     background-color:#22343D;
     display: flex;
     align-items: center;
