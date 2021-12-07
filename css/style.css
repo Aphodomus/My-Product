@@ -282,6 +282,38 @@ PRODUCT SETTINGS
   font-size: 16px;
   line-height: 28px;
 }
+.container > .frequently-asked *::before, .container > .frequently-asked ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+.container > .frequently-asked > .cont > .accordion > .item {
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0.5rem;
+}
+.container > .frequently-asked > .cont > .accordion > .item > .link {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.container > .frequently-asked > .cont > .accordion > .item > .link i {
+  color: #02897A;
+  padding: 0.5rem;
+}
+.container > .frequently-asked > .cont > .accordion > .item > .link > .fa-minus-circle {
+  display: none;
+}
+.container > .frequently-asked > .cont > .accordion > .item > .answer {
+  max-height: 0;
+  overflow: hidden;
+}
 
 /* 
 ====================
