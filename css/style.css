@@ -300,6 +300,7 @@ FIRST DIV
 .cointainer1 .cont-col1 .box-mail1 .join-now-box {
   background-color: transparent;
   border: none;
+  padding: 1.3em 1.3em;
   border-radius: 3em;
   font-weight: 400;
   font-size: 1.15em;
