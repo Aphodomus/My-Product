@@ -263,7 +263,29 @@ MEDIA QUERIES NAVBAR
     }
 
     .container {
-        
+        >.price-table {
+            margin-top: 3rem;
+
+            >.cards {
+                display: inline;
+    
+                >.card {
+                    width: 100%;
+                    margin: 1rem 0;
+                }
+            }
+        }
+
+        >.enterprise-div {
+            >.preTitle {
+                margin-bottom: 1.5rem;
+            }
+
+            >.title {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 1020px) {
