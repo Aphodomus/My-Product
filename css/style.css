@@ -452,4 +452,14 @@ THRID SECTION - CONTACT US
   letter-spacing: 0.03em;
 }
 
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 5em;
+}
+.social-media .social-media-circle {
+  border-radius: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
