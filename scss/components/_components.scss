@@ -994,6 +994,53 @@ PRODUCT SETTINGS
             }
         }
     }
+
+    >.how-product {
+        text-align: center;
+
+        >.title {
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 51px;
+            margin-bottom: 4rem;
+        }
+
+        >.content {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6rem;
+
+            img {
+                width: 47%;
+            }
+
+            >.text {
+                width: 47%;
+
+                >.preTitle {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 1rem;
+                }
+
+                >.title {
+                    margin-bottom: 1rem;
+                }
+
+                >.description {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        button {
+            @include button-green(0.75rem 2rem);
+        }
+    }
 }
 
 /* 

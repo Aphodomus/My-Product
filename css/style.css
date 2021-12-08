@@ -865,6 +865,49 @@ PRODUCT SETTINGS
   line-height: 27px;
   letter-spacing: 0.2px;
 }
+.container > .how-product {
+  text-align: center;
+}
+.container > .how-product > .title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  margin-bottom: 4rem;
+}
+.container > .how-product > .content {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.container > .how-product > .content img {
+  width: 47%;
+}
+.container > .how-product > .content > .text {
+  width: 47%;
+}
+.container > .how-product > .content > .text > .preTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 1rem;
+}
+.container > .how-product > .content > .text > .title {
+  margin-bottom: 1rem;
+}
+.container > .how-product > .content > .text > .description {
+  font-size: 16px;
+  line-height: 28px;
+}
+.container > .how-product button {
+  color: #fff;
+  background-color: #02897A;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+}
 
 /* 
 =====================
