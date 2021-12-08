@@ -926,6 +926,7 @@ PRODUCT SETTINGS
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 .container > .join-thousand > .cards > .card {
   width: 50%;
@@ -1138,6 +1139,13 @@ MEDIA QUERIES PRODUCT
   }
   .container > .how-product button {
     display: none;
+  }
+  .container > .join-thousand > .title {
+    width: 65%;
+  }
+  .container > .join-thousand > .cards > .card {
+    margin-bottom: 3rem;
+    width: 100%;
   }
 }
 /* 

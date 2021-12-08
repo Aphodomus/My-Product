@@ -1062,6 +1062,7 @@ PRODUCT SETTINGS
             display: flex;
             justify-content: space-between;
             margin-top: 4rem;
+            margin-bottom: 6rem;
 
             >.card {
                 width: 50%;
@@ -1343,6 +1344,19 @@ MEDIA QUERIES PRODUCT
 
             button {
                 display: none;
+            }
+        }
+
+        >.join-thousand {
+            >.title {
+                width: 65%;
+            }
+    
+            >.cards {
+                >.card {
+                    margin-bottom: 3rem;
+                    width: 100%;
+                }
             }
         }
     }
