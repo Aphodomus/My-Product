@@ -835,8 +835,35 @@ PRODUCT SETTINGS
   text-align: center;
 }
 .container > .why-choose > .cards {
+  padding-top: 3rem;
   display: flex;
   justify-content: space-between;
+}
+.container > .why-choose > .cards > .card {
+  width: 31%;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
+}
+.container > .why-choose > .cards > .card > .images {
+  width: 25%;
+  padding-top: 0.5rem;
+}
+.container > .why-choose > .cards > .card > .title {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 33px;
+  letter-spacing: 0.1px;
+}
+.container > .why-choose > .cards > .card > .description {
+  padding-top: 1rem;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
 }
 
 /* 
