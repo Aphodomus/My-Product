@@ -1157,19 +1157,12 @@ MEDIA QUERIES PRODUCT
         }
 
         >.our-clients {
-            >.title {
-                padding-top: 3rem;
-                text-align: center;
-                font-weight: bold;
-                font-size: 40px;
-                line-height: 60px;
-            }
-    
             >.clients {
-                display: flex;
+                display: inline-block;
     
-                img {
-                    width: 20%;
+                >.images {
+                    width: 100%;
+                    padding-bottom: 3rem;
                 }
             }
         }

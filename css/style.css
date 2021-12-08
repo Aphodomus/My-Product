@@ -985,18 +985,12 @@ MEDIA QUERIES PRODUCT
   .container > .get-this > .image {
     width: 100%;
   }
-  .container > .our-clients > .title {
-    padding-top: 3rem;
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 60px;
-  }
   .container > .our-clients > .clients {
-    display: flex;
+    display: inline-block;
   }
-  .container > .our-clients > .clients img {
-    width: 20%;
+  .container > .our-clients > .clients > .images {
+    width: 100%;
+    padding-bottom: 3rem;
   }
 }
 /* 
