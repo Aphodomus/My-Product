@@ -1298,6 +1298,7 @@ FOOTER SETTINGS
             width: 10%;
         }
     }
+    margin-top: 7%;
 }
 .col1 {
     margin-top: -5%;
@@ -1378,6 +1379,7 @@ FOOTER MEDIA QUERIES
         left: 0;
         text-align: center;
         padding: 16px 0;
+        margin-top: 20%;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -1419,5 +1421,388 @@ FOOTER MEDIA QUERIES
         color: white;
         padding-bottom: 10%;
         padding-top: -8%;
+    }
+}
+
+/* 
+=============
+FIRST DIV
+=============
+*/
+
+.cointainer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 95%;
+    max-width: 110em;
+    margin: 7em auto;
+    .cont-col1 {
+        .st-title {
+            color: white;
+            font-weight: 600;
+            font-size: 4.5em;
+            line-height: 149%;
+        }
+        .st-subtitle {
+            color: white;
+            font-weight: 400;
+            font-size: 2.25em;
+            line-height: 160%;
+            margin-top: 1.5em;
+        }
+        .box-mail1{
+            margin-top: 2em;
+            background-color: #1f2e35;
+            border: solid .1em white;
+            border-radius: 3em;
+            width: 33.5em;
+            height: 3.75em;
+            .join-now-box {
+                background-color: transparent;
+                border: none;
+                padding: 1.3em 1.3em;
+                border-radius: 3em;
+                font-weight: 400;
+                font-size: 1.15em;
+                letter-spacing: -0.03em;
+                width: 22em;
+                height: 3em;
+            }
+            .join-now-bt {
+                background-color: #02897A;
+                border-radius: 3em;
+                color: white;
+                padding: 1em 1.75em;
+                text-align: center;
+                text-decoration: none;
+                border: none;
+                margin-top: .27em;
+                margin-right: .3em;
+                float: right;
+            }
+        }
+        .join-images {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5em;
+        }
+        .guy2 {
+            transform: translateX(-50%);
+        }
+        .guy3 {
+            transform: translateX(-90%);
+        }
+        .join-over {
+            color: white;
+            font-weight: 500;
+            font-size: 1em;
+            span {
+                color: #02897A;
+            }
+        }    
+    }
+    .cont-col2 {
+        display: flex;
+        height: 35em;
+        width: auto;
+    }
+}
+
+/* 
+==============================
+FIRST DIV - MEDIA QUERIES
+==============================
+*/
+@media (max-width: 1020px) {
+    .cointainer1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        max-width: 20%;
+        margin: 3em auto;
+        .cont-col1 {
+            .st-title {
+                font-size: 3em;
+            }
+            .st-subtitle {
+                font-size: 1.7em;
+                margin-top: 1em;
+            }
+            .box-mail1 {
+                width: 25em;
+                height: 4em;
+                .join-now-box {
+                    padding: 1.7em 1em;
+                }
+                .join-now-bt {
+                    margin-top: -3.8em;
+                    padding: 1.15em 3em;
+                    font-weight: 700;
+                }
+            }
+            .join-over {
+                margin-left: -2.7em;
+            }
+        }
+    }
+    .cont-col2 {
+        margin-top: 5em;
+        max-height: 21em;
+    }
+}
+
+/* 
+===============
+SECOND SECTION
+===============
+*/
+
+.bf-cards {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    .second-title {
+        font-weight: 700;
+        font-size: 2.25em;
+        line-height: 1.75em;
+    }
+    .second-subtitle {
+        font-weight: 500;
+        font-size: 1.2em;
+        line-height: 1.375em;
+    }
+}
+
+/* 
+=======================
+SECOND SECTION - CARDS
+=======================
+*/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 30em);
+    grid-template-rows: repeat(3, em);
+    width: 100%;
+    justify-content: center;
+    .card {
+        width: 25em;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        background-color: white;
+        flex-direction: column;
+        border-radius: 2%;
+        margin-top: 4em;
+        .image-card {
+            border-radius: 2%;
+        }
+        .info-card {
+            font-weight: 400;
+            font-size: 1.2em;
+            line-height: 1.9em;
+            margin-top: 1.2em;
+            margin-bottom: 1.2em;
+            margin-left: 1.3em;
+            .bold-name {
+                font-weight: 700;
+            }
+        }
+        .text-card {
+            color: #22343D;
+            font-weight: 700;
+            font-size: 1.7em;
+            line-height: 1.67em;
+            margin-bottom: 1.25em;
+            margin-left: 1.3em;
+            margin-right: 1.5em;
+        }    
+    }
+}
+
+/* 
+============================
+SECOND SECTION - DOWN CARDS
+============================
+*/
+
+.aft-cards {
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: .75em;
+    margin-top: 3em;
+    margin-bottom: 15em;
+}
+
+/* 
+=======================================
+SECOND SECTION - MEDIA QUERIES GENERAL
+=======================================
+*/
+@media (max-width: 1020px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .bf-cards {
+        margin-top: 5em;
+        margin: auto 3em;
+        .second-title {
+            margin-bottom: .4em;
+        }
+    }
+    .aft-cards {
+        margin-bottom: 8em;
+    }
+}
+
+
+/* 
+============================
+THRID SECTION - CONTACT US
+============================
+*/
+
+.thrid-section-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .thrid-section-text-principal {
+        font-weight: 700;
+        font-size: 2.25em;
+        line-height: 1.9em;
+        letter-spacing: 0.03em;
+        margin-bottom: .7em;
+    }
+    .thrid-section-text-secondary {
+        font-weight: 500;
+        font-size: 1.35em;
+        line-height: 1.75em;
+        letter-spacing: 0.03em;
+    }
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 5em;
+    .social-media-circle {
+        border-radius: 100%;
+    }
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    border: 0;
+    border-radius: 48px;
+    margin-bottom: 4em;
+}
+
+/* 
+=======================================
+THRID SECTION - MEDIA QUERIES GENERAL
+=======================================
+*/
+@media (max-width: 1020px) {
+    .social-media {
+        margin-top: 2em;
+    }
+    .map {
+        max-width: 90%;
+        max-height: 3em;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1.5em;
+        margin-top: 14em;
+    }
+}
+
+/* 
+==============
+FORM SETTINGS
+==============
+*/
+
+.form-bg {
+    width: 100%;
+    max-width: 63em;
+    margin: 0 auto;
+    border-radius: 2.5em;
+    padding: 4em;
+    background-color:#22343D;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.send-msg {
+    color: white;
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 1.55em;
+    letter-spacing: 0.015em;
+    margin-bottom: 1.5em;
+}
+
+.name-mail {
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 3em;
+    padding: 2em 1.9em;
+    width: 58em;
+    height: 3.5em;
+    margin-bottom: 3em;
+}
+
+.msg {
+    width: 58em;
+    height: 14.5em;
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+}
+
+.button {
+    text-decoration: none;
+    border: none;
+    color: white;
+    background: #02897A;
+    border-radius: 3em;
+    align-items: center;
+    padding: 1.2em 2.5em;
+    margin: .8em auto;
+}
+
+/* 
+==============================
+FORM SECTION - MEDIA QUERIES
+==============================
+*/
+@media (max-width: 1020px) {
+    .form-bg {
+        background-color: #1f2e35;
+    }
+    .send-msg {
+        margin-top: 7em;
+    }
+    .name-mail {
+        max-width: 25em;
+    }
+    .msg {
+        width: 25em;
+    }
+    .button {
+        width: 9.5em;
     }
 }
