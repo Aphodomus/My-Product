@@ -1046,6 +1046,41 @@ PRODUCT SETTINGS
             @include button-green(0.75rem 2rem);
         }
     }
+
+    >.join-thousand {
+        text-align: center;
+
+        >.title {
+            margin: auto;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 48px;
+            width: 50%;
+        }
+
+        >.cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+
+            >.card {
+                width: 50%;
+
+                >.image {
+                    width: 30%;
+                    margin-bottom: 1rem;
+                }
+
+                >.title {
+                    margin-bottom: 1rem;
+                }
+
+                >.find {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
 }
 
 /* 

@@ -912,6 +912,34 @@ PRODUCT SETTINGS
   padding: 0.75rem 2rem;
   font-size: 16px;
 }
+.container > .join-thousand {
+  text-align: center;
+}
+.container > .join-thousand > .title {
+  margin: auto;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  width: 50%;
+}
+.container > .join-thousand > .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.container > .join-thousand > .cards > .card {
+  width: 50%;
+}
+.container > .join-thousand > .cards > .card > .image {
+  width: 30%;
+  margin-bottom: 1rem;
+}
+.container > .join-thousand > .cards > .card > .title {
+  margin-bottom: 1rem;
+}
+.container > .join-thousand > .cards > .card > .find {
+  margin-top: 1rem;
+}
 
 /* 
 =====================
