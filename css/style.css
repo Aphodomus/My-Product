@@ -1029,6 +1029,24 @@ MEDIA QUERIES PRODUCT
     width: 100%;
     padding-bottom: 3rem;
   }
+  .container > .why-choose > .title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+  }
+  .container > .why-choose > .cards {
+    display: inline-block;
+  }
+  .container > .why-choose > .cards > .card {
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 /* 
 ====================

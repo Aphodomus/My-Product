@@ -1211,6 +1211,29 @@ MEDIA QUERIES PRODUCT
                 }
             }
         }
+
+        >.why-choose {
+            >.title {
+                font-weight: bold;
+                font-size: 34px;
+                line-height: 51px;
+                text-align: center;
+            }
+    
+            >.cards {
+                display: inline-block;
+    
+                >.card {
+                    width: 100%;
+                    border: 1px solid #DEDEDE;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
     }
 }
 
