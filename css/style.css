@@ -834,6 +834,10 @@ PRODUCT SETTINGS
   line-height: 51px;
   text-align: center;
 }
+.container > .why-choose > .cards {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* 
 =====================
@@ -1408,14 +1412,14 @@ SECOND SECTION
 SECOND SECTION - CARDS
 =======================
 */
-.cards {
+.dad-cards .cards {
   display: grid;
   grid-template-columns: repeat(3, 30em);
   grid-template-rows: repeat(3, em);
   width: 100%;
   justify-content: center;
 }
-.cards .card {
+.dad-cards .cards .card {
   width: 25em;
   display: flex;
   margin-left: auto;
@@ -1426,10 +1430,10 @@ SECOND SECTION - CARDS
   border-radius: 2%;
   margin-top: 4em;
 }
-.cards .card .image-card {
+.dad-cards .cards .card .image-card {
   border-radius: 2%;
 }
-.cards .card .info-card {
+.dad-cards .cards .card .info-card {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 1.9em;
@@ -1437,10 +1441,10 @@ SECOND SECTION - CARDS
   margin-bottom: 1.2em;
   margin-left: 1.3em;
 }
-.cards .card .info-card .bold-name {
+.dad-cards .cards .card .info-card .bold-name {
   font-weight: 700;
 }
-.cards .card .text-card {
+.dad-cards .cards .card .text-card {
   color: #22343D;
   font-weight: 700;
   font-size: 1.7em;

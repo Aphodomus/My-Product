@@ -957,6 +957,11 @@ PRODUCT SETTINGS
             line-height: 51px;
             text-align: center;
         }
+
+        >.cards {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -1629,45 +1634,47 @@ SECOND SECTION - CARDS
 =======================
 */
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 30em);
-    grid-template-rows: repeat(3, em);
-    width: 100%;
-    justify-content: center;
-    .card {
-        width: 25em;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+.dad-cards {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 30em);
+        grid-template-rows: repeat(3, em);
+        width: 100%;
         justify-content: center;
-        background-color: white;
-        flex-direction: column;
-        border-radius: 2%;
-        margin-top: 4em;
-        .image-card {
+        .card {
+            width: 25em;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            background-color: white;
+            flex-direction: column;
             border-radius: 2%;
-        }
-        .info-card {
-            font-weight: 400;
-            font-size: 1.2em;
-            line-height: 1.9em;
-            margin-top: 1.2em;
-            margin-bottom: 1.2em;
-            margin-left: 1.3em;
-            .bold-name {
-                font-weight: 700;
+            margin-top: 4em;
+            .image-card {
+                border-radius: 2%;
             }
+            .info-card {
+                font-weight: 400;
+                font-size: 1.2em;
+                line-height: 1.9em;
+                margin-top: 1.2em;
+                margin-bottom: 1.2em;
+                margin-left: 1.3em;
+                .bold-name {
+                    font-weight: 700;
+                }
+            }
+            .text-card {
+                color: #22343D;
+                font-weight: 700;
+                font-size: 1.7em;
+                line-height: 1.67em;
+                margin-bottom: 1.25em;
+                margin-left: 1.3em;
+                margin-right: 1.5em;
+            }    
         }
-        .text-card {
-            color: #22343D;
-            font-weight: 700;
-            font-size: 1.7em;
-            line-height: 1.67em;
-            margin-bottom: 1.25em;
-            margin-left: 1.3em;
-            margin-right: 1.5em;
-        }    
     }
 }
 
