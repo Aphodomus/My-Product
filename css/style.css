@@ -828,6 +828,13 @@ PRODUCT SETTINGS
 .container > .our-clients > .clients > .images img {
   width: 43%;
 }
+.container > .why-choose > .title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+}
+
 /* 
 =====================
 MEDIA QUERIES PRODUCT

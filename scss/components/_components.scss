@@ -951,7 +951,12 @@ PRODUCT SETTINGS
     }
 
     >.why-choose {
-        
+        >.title {
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 51px;
+            text-align: center;
+        }
     }
 }
 
