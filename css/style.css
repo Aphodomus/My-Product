@@ -881,6 +881,10 @@ PRODUCT SETTINGS
   align-items: center;
   margin-bottom: 6rem;
 }
+.container > .how-product > .content .reverse {
+  display: flex;
+  flex-direction: inherit;
+}
 .container > .how-product > .content img {
   width: 47%;
 }
@@ -1089,6 +1093,23 @@ MEDIA QUERIES PRODUCT
     text-align: center;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+  .container > .how-product > .content {
+    display: inline-block;
+  }
+  .container > .how-product > .content .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container > .how-product > .content img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .container > .how-product > .content > .text {
+    width: 100%;
+  }
+  .container > .how-product button {
+    display: none;
   }
 }
 /* 

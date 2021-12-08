@@ -1012,6 +1012,11 @@ PRODUCT SETTINGS
             align-items: center;
             margin-bottom: 6rem;
 
+            .reverse {
+                display: flex;
+                flex-direction: inherit;
+            }
+
             img {
                 width: 47%;
             }
@@ -1279,6 +1284,30 @@ MEDIA QUERIES PRODUCT
                     padding: 1.5rem;
                     margin-bottom: 1.5rem;
                 }
+            }
+        }
+
+        >.how-product {
+            >.content {
+                display: inline-block;
+
+                .reverse {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+    
+                img {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+    
+                >.text {
+                    width: 100%;
+                }
+            }
+
+            button {
+                display: none;
             }
         }
     }
