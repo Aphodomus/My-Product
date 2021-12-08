@@ -807,6 +807,140 @@ PRODUCT SETTINGS
 .container > .get-this > .image {
   width: 45%;
 }
+.container > .our-clients > .title {
+  padding-top: 3rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+}
+.container > .our-clients > .clients {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container > .our-clients > .clients > .images {
+  display: flex;
+  justify-content: space-between;
+  width: 46%;
+}
+.container > .our-clients > .clients > .images img {
+  width: 43%;
+}
+.container > .why-choose > .title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+}
+.container > .why-choose > .cards {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container > .why-choose > .cards > .card {
+  width: 31%;
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
+}
+.container > .why-choose > .cards > .card > .images {
+  width: 25%;
+  padding-top: 0.5rem;
+}
+.container > .why-choose > .cards > .card > .title {
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 33px;
+  letter-spacing: 0.1px;
+}
+.container > .why-choose > .cards > .card > .description {
+  padding-top: 1rem;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+}
+.container > .how-product {
+  text-align: center;
+}
+.container > .how-product > .title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 51px;
+  margin-bottom: 4rem;
+}
+.container > .how-product > .content {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.container > .how-product > .content .reverse {
+  display: flex;
+  flex-direction: inherit;
+}
+.container > .how-product > .content img {
+  width: 47%;
+}
+.container > .how-product > .content > .text {
+  width: 47%;
+}
+.container > .how-product > .content > .text > .preTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 1rem;
+}
+.container > .how-product > .content > .text > .title {
+  margin-bottom: 1rem;
+}
+.container > .how-product > .content > .text > .description {
+  font-size: 16px;
+  line-height: 28px;
+}
+.container > .how-product button {
+  color: #fff;
+  background-color: #02897A;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+}
+.container > .join-thousand {
+  text-align: center;
+}
+.container > .join-thousand > .title {
+  margin: auto;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  width: 50%;
+}
+.container > .join-thousand > .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+.container > .join-thousand > .cards > .card {
+  width: 50%;
+}
+.container > .join-thousand > .cards > .card > .image {
+  width: 30%;
+  margin-bottom: 1rem;
+}
+.container > .join-thousand > .cards > .card > .title {
+  margin-bottom: 1rem;
+}
+.container > .join-thousand > .cards > .card > .find {
+  margin-top: 1rem;
+}
 
 /* 
 =====================
@@ -962,6 +1096,55 @@ MEDIA QUERIES PRODUCT
     width: 100%;
   }
   .container > .get-this > .image {
+    width: 100%;
+  }
+  .container > .our-clients > .clients {
+    display: inline-block;
+  }
+  .container > .our-clients > .clients > .images {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .container > .why-choose > .title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+  }
+  .container > .why-choose > .cards {
+    display: inline-block;
+  }
+  .container > .why-choose > .cards > .card {
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .container > .how-product > .content {
+    display: inline-block;
+  }
+  .container > .how-product > .content .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container > .how-product > .content img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .container > .how-product > .content > .text {
+    width: 100%;
+  }
+  .container > .how-product button {
+    display: none;
+  }
+  .container > .join-thousand > .title {
+    width: 65%;
+  }
+  .container > .join-thousand > .cards > .card {
+    margin-bottom: 3rem;
     width: 100%;
   }
 }
@@ -1230,80 +1413,79 @@ FIRST DIV
 */
 .cointainer1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  width: 95%;
-  max-width: 110em;
-  margin: 7em auto;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+.cointainer1 .cont-col1 {
+  width: 48%;
 }
 .cointainer1 .cont-col1 .st-title {
-  color: white;
   font-weight: 600;
-  font-size: 4.5em;
+  font-size: 40px;
   line-height: 149%;
+  letter-spacing: -0.03em;
+  width: 70%;
+  margin-bottom: 1rem;
 }
 .cointainer1 .cont-col1 .st-subtitle {
-  color: white;
-  font-weight: 400;
-  font-size: 2.25em;
+  font-weight: normal;
+  font-size: 20px;
   line-height: 160%;
-  margin-top: 1.5em;
+  letter-spacing: -0.03em;
+  width: 90%;
+  margin-bottom: 1rem;
 }
 .cointainer1 .cont-col1 .box-mail1 {
-  margin-top: 2em;
+  border: 1px solid #fff;
+  width: 80%;
+  border-radius: 48px;
+  height: 3.5rem;
   background-color: #1f2e35;
-  border: solid 0.1em white;
-  border-radius: 3em;
-  width: 33.5em;
-  height: 3.75em;
 }
 .cointainer1 .cont-col1 .box-mail1 .join-now-box {
   background-color: transparent;
   border: none;
-  padding: 1.3em 1.3em;
-  border-radius: 3em;
-  font-weight: 400;
-  font-size: 1.15em;
-  letter-spacing: -0.03em;
-  width: 22em;
-  height: 3em;
+  padding: 1.2rem;
+  text-decoration: none;
+  border-radius: 48px;
+  width: 70%;
 }
 .cointainer1 .cont-col1 .box-mail1 .join-now-bt {
-  background-color: #02897A;
+  float: right;
+  margin: 0.32rem;
   border-radius: 3em;
   color: white;
+  background-color: #02897A;
   padding: 1em 1.75em;
-  text-align: center;
+  align-items: center;
   text-decoration: none;
-  border: none;
-  margin-top: 0.27em;
-  margin-right: 0.3em;
-  float: right;
 }
 .cointainer1 .cont-col1 .join-images {
+  margin-top: 1.1rem;
   display: flex;
   align-items: center;
-  margin-top: 1.5em;
 }
-.cointainer1 .cont-col1 .guy2 {
-  transform: translateX(-50%);
+.cointainer1 .cont-col1 .join-images img {
+  width: 9%;
 }
-.cointainer1 .cont-col1 .guy3 {
-  transform: translateX(-90%);
+.cointainer1 .cont-col1 .join-images .guy2 {
+  transform: translateX(-60%);
 }
-.cointainer1 .cont-col1 .join-over {
-  color: white;
-  font-weight: 500;
-  font-size: 1em;
+.cointainer1 .cont-col1 .join-images .guy3 {
+  transform: translateX(-95%);
 }
-.cointainer1 .cont-col1 .join-over span {
+.cointainer1 .cont-col1 .join-images .join-over {
+  margin-left: -2rem;
+}
+.cointainer1 .cont-col1 .join-images .join-over span {
   color: #02897A;
 }
 .cointainer1 .cont-col2 {
-  display: flex;
-  height: 35em;
-  width: auto;
+  width: 48%;
+}
+.cointainer1 .cont-col2 img {
+  width: 100%;
+  margin-top: 1rem;
 }
 
 /* 
@@ -1313,75 +1495,79 @@ FIRST DIV - MEDIA QUERIES
 */
 @media (max-width: 1020px) {
   .cointainer1 {
-    display: flex;
-    flex-direction: column;
+    display: inline;
+    justify-content: center;
     text-align: center;
-    width: 90%;
-    max-width: 20%;
-    margin: 3em auto;
+    width: 100%;
+  }
+  .cointainer1 .cont-col1 {
+    width: 100%;
   }
   .cointainer1 .cont-col1 .st-title {
-    font-size: 3em;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
   }
   .cointainer1 .cont-col1 .st-subtitle {
-    font-size: 1.7em;
-    margin-top: 1em;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
   }
   .cointainer1 .cont-col1 .box-mail1 {
-    width: 25em;
-    height: 4em;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
   }
-  .cointainer1 .cont-col1 .box-mail1 .join-now-box {
-    padding: 1.7em 1em;
+  .cointainer1 .cont-col1 .join-images {
+    padding-left: 2rem;
   }
-  .cointainer1 .cont-col1 .box-mail1 .join-now-bt {
-    margin-top: -3.8em;
-    padding: 1.15em 3em;
-    font-weight: 700;
+  .cointainer1 .cont-col2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
   }
-  .cointainer1 .cont-col1 .join-over {
-    margin-left: -2.7em;
+  .cointainer1 .cont-col2 img {
+    width: 100%;
   }
 
   .cont-col2 {
-    margin-top: 5em;
-    max-height: 21em;
+    width: 100%;
+    align-items: center;
+  }
+  .cont-col2 img {
+    width: 100%;
   }
 }
-/* 
-===============
-SECOND SECTION
-===============
-*/
-.bf-cards {
-  color: white;
-  justify-content: center;
-  text-align: center;
-}
-.bf-cards .second-title {
-  font-weight: 700;
-  font-size: 2.25em;
-  line-height: 1.75em;
-}
-.bf-cards .second-subtitle {
-  font-weight: 500;
-  font-size: 1.2em;
-  line-height: 1.375em;
-}
-
 /* 
 =======================
 SECOND SECTION - CARDS
 =======================
 */
-.cards {
+.dad-cards .bf-cards {
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+.dad-cards .bf-cards .second-title {
+  font-weight: 700;
+  font-size: 2.25em;
+  line-height: 1.75em;
+}
+.dad-cards .bf-cards .second-subtitle {
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.375em;
+}
+.dad-cards .cards {
   display: grid;
   grid-template-columns: repeat(3, 30em);
   grid-template-rows: repeat(3, em);
   width: 100%;
   justify-content: center;
 }
-.cards .card {
+.dad-cards .cards .card {
+  color: black;
   width: 25em;
   display: flex;
   margin-left: auto;
@@ -1392,10 +1578,11 @@ SECOND SECTION - CARDS
   border-radius: 2%;
   margin-top: 4em;
 }
-.cards .card .image-card {
+.dad-cards .cards .card .image-card {
   border-radius: 2%;
+  width: 100%;
 }
-.cards .card .info-card {
+.dad-cards .cards .card .info-card {
   font-weight: 400;
   font-size: 1.2em;
   line-height: 1.9em;
@@ -1403,10 +1590,10 @@ SECOND SECTION - CARDS
   margin-bottom: 1.2em;
   margin-left: 1.3em;
 }
-.cards .card .info-card .bold-name {
+.dad-cards .cards .card .info-card .bold-name {
   font-weight: 700;
 }
-.cards .card .text-card {
+.dad-cards .cards .card .text-card {
   color: #22343D;
   font-weight: 700;
   font-size: 1.7em;
@@ -1415,13 +1602,7 @@ SECOND SECTION - CARDS
   margin-left: 1.3em;
   margin-right: 1.5em;
 }
-
-/* 
-============================
-SECOND SECTION - DOWN CARDS
-============================
-*/
-.aft-cards {
+.dad-cards .aft-cards {
   color: white;
   display: flex;
   justify-content: center;
@@ -1429,28 +1610,40 @@ SECOND SECTION - DOWN CARDS
   margin-top: 3em;
   margin-bottom: 15em;
 }
+.dad-cards .aft-cards img {
+  width: 1.3%;
+}
 
+/* 
+============================
+SECOND SECTION - DOWN CARDS
+============================
+*/
 /* 
 =======================================
 SECOND SECTION - MEDIA QUERIES GENERAL
 =======================================
 */
 @media (max-width: 1020px) {
-  .cards {
+  .dad-cards {
+    display: inline;
+  }
+  .dad-cards .cards {
     display: flex;
     flex-direction: column;
   }
-
-  .bf-cards {
+  .dad-cards .bf-cards {
     margin-top: 5em;
     margin: auto 3em;
   }
-  .bf-cards .second-title {
+  .dad-cards .bf-cards .second-title {
     margin-bottom: 0.4em;
   }
-
-  .aft-cards {
+  .dad-cards .aft-cards {
     margin-bottom: 8em;
+  }
+  .dad-cards .aft-cards img {
+    width: 3%;
   }
 }
 /* 
@@ -1487,6 +1680,7 @@ THRID SECTION - CONTACT US
 }
 .social-media .social-media-circle {
   border-radius: 100%;
+  width: 3%;
 }
 
 .map {
@@ -1506,6 +1700,9 @@ THRID SECTION - MEDIA QUERIES GENERAL
 @media (max-width: 1020px) {
   .social-media {
     margin-top: 2em;
+  }
+  .social-media .social-media-circle {
+    width: 7%;
   }
 
   .map {

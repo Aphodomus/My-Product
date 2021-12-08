@@ -922,6 +922,166 @@ PRODUCT SETTINGS
             width: 45%;
         }
     }
+
+    >.our-clients {
+        >.title {
+            padding-top: 3rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        >.clients {
+            padding-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            >.images {
+                display: flex;
+                justify-content: space-between;
+                width: 46%;
+
+                img {
+                    width: 43%;
+                }
+            }
+        }
+    }
+
+    >.why-choose {
+        >.title {
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 51px;
+            text-align: center;
+        }
+
+        >.cards {
+            padding-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+
+            >.card {
+                width: 31%;
+                border: 1px solid #DEDEDE;
+                box-sizing: border-box;
+                border-radius: 10px;
+                text-align: center;
+                padding: 1.5rem;
+
+                >.images {
+                    width: 25%;
+                    padding-top: 0.5rem;
+                }
+
+                >.title {
+                    padding-top: 1rem;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    line-height: 33px;
+                    letter-spacing: 0.1px;
+                }
+
+                >.description {
+                    padding-top: 1rem;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 27px;
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+    }
+
+    >.how-product {
+        text-align: center;
+
+        >.title {
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 51px;
+            margin-bottom: 4rem;
+        }
+
+        >.content {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6rem;
+
+            .reverse {
+                display: flex;
+                flex-direction: inherit;
+            }
+
+            img {
+                width: 47%;
+            }
+
+            >.text {
+                width: 47%;
+
+                >.preTitle {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 1rem;
+                }
+
+                >.title {
+                    margin-bottom: 1rem;
+                }
+
+                >.description {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        button {
+            @include button-green(0.75rem 2rem);
+        }
+    }
+
+    >.join-thousand {
+        text-align: center;
+
+        >.title {
+            margin: auto;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 48px;
+            width: 50%;
+        }
+
+        >.cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+
+            >.card {
+                width: 50%;
+
+                >.image {
+                    width: 30%;
+                    margin-bottom: 1rem;
+                }
+
+                >.title {
+                    margin-bottom: 1rem;
+                }
+
+                >.find {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
 }
 
 /* 
@@ -1126,6 +1286,77 @@ MEDIA QUERIES PRODUCT
             >.image {
                 width: 100%;
                 //background: #02897A;
+            }
+        }
+
+        >.our-clients {
+            >.clients {
+                display: inline-block;
+    
+                >.images {
+                    width: 100%;
+                    padding-bottom: 3rem;
+                }
+            }
+        }
+
+        >.why-choose {
+            >.title {
+                font-weight: bold;
+                font-size: 34px;
+                line-height: 51px;
+                text-align: center;
+            }
+    
+            >.cards {
+                display: inline-block;
+    
+                >.card {
+                    width: 100%;
+                    border: 1px solid #DEDEDE;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        >.how-product {
+            >.content {
+                display: inline-block;
+
+                .reverse {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+    
+                img {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+    
+                >.text {
+                    width: 100%;
+                }
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        >.join-thousand {
+            >.title {
+                width: 65%;
+            }
+    
+            >.cards {
+                >.card {
+                    margin-bottom: 3rem;
+                    width: 100%;
+                }
             }
         }
     }
@@ -1432,81 +1663,92 @@ FIRST DIV
 
 .cointainer1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    width: 95%;
-    max-width: 110em;
-    margin: 7em auto;
+    justify-content: space-between;
+    margin-top: 6rem;
+
     .cont-col1 {
+        width: 48%;
+        
         .st-title {
-            color: white;
             font-weight: 600;
-            font-size: 4.5em;
+            font-size: 40px;
             line-height: 149%;
+            letter-spacing: -0.03em;
+            width: 70%;
+            margin-bottom: 1rem;
         }
+
         .st-subtitle {
-            color: white;
-            font-weight: 400;
-            font-size: 2.25em;
+            font-weight: normal;
+            font-size: 20px;
             line-height: 160%;
-            margin-top: 1.5em;
+            letter-spacing: -0.03em;
+            width: 90%;
+            margin-bottom: 1rem;
         }
-        .box-mail1{
-            margin-top: 2em;
+
+        .box-mail1 {
+            border: 1px solid #fff;
+            width: 80%;
+            border-radius: 48px;
+            height: 3.5rem;
             background-color: #1f2e35;
-            border: solid .1em white;
-            border-radius: 3em;
-            width: 33.5em;
-            height: 3.75em;
+
             .join-now-box {
                 background-color: transparent;
                 border: none;
-                padding: 1.3em 1.3em;
-                border-radius: 3em;
-                font-weight: 400;
-                font-size: 1.15em;
-                letter-spacing: -0.03em;
-                width: 22em;
-                height: 3em;
+                padding: 1.2rem;
+                text-decoration: none;
+                border-radius: 48px;
+                width: 70%;
             }
+
             .join-now-bt {
-                background-color: #02897A;
+                float: right;
+                margin: 0.32rem;
                 border-radius: 3em;
                 color: white;
+                background-color: #02897A;
                 padding: 1em 1.75em;
-                text-align: center;
+                align-items: center;
                 text-decoration: none;
-                border: none;
-                margin-top: .27em;
-                margin-right: .3em;
-                float: right;
             }
         }
+
         .join-images {
+            margin-top: 1.1rem;
             display: flex;
             align-items: center;
-            margin-top: 1.5em;
-        }
-        .guy2 {
-            transform: translateX(-50%);
-        }
-        .guy3 {
-            transform: translateX(-90%);
-        }
-        .join-over {
-            color: white;
-            font-weight: 500;
-            font-size: 1em;
-            span {
-                color: #02897A;
+
+            img {
+                width: 9%;
             }
-        }    
+
+            .guy2 {
+                transform: translateX(-60%);
+            }
+            
+            .guy3 {
+                transform: translateX(-95%);
+            }
+
+            .join-over {
+                margin-left: -2rem;
+
+                span {
+                    color: #02897A;
+                }
+            }
+        }
     }
+
     .cont-col2 {
-        display: flex;
-        height: 35em;
-        width: auto;
+        width: 48%;
+        
+        img {
+            width: 100%;
+            margin-top: 1rem;
+        }
     }
 }
 
@@ -1517,62 +1759,57 @@ FIRST DIV - MEDIA QUERIES
 */
 @media (max-width: 1020px) {
     .cointainer1 {
-        display: flex;
-        flex-direction: column;
+        display: inline;
+        justify-content: center;
         text-align: center;
-        width: 90%;
-        max-width: 20%;
-        margin: 3em auto;
+        width: 100%;
+
         .cont-col1 {
+            width: 100%;
+
             .st-title {
-                font-size: 3em;
+                align-items: center;
+                width: 80%;
+                margin: auto;
+                padding-bottom: 2rem;
             }
+
             .st-subtitle {
-                font-size: 1.7em;
-                margin-top: 1em;
+                width: 80%;
+                margin: auto;
+                padding-bottom: 2rem;
             }
+
             .box-mail1 {
-                width: 25em;
-                height: 4em;
-                .join-now-box {
-                    padding: 1.7em 1em;
-                }
-                .join-now-bt {
-                    margin-top: -3.8em;
-                    padding: 1.15em 3em;
-                    font-weight: 700;
-                }
+                justify-content: center;
+                margin: auto;
+                width: 80%;
             }
-            .join-over {
-                margin-left: -2.7em;
+
+            .join-images {
+                padding-left: 2rem;
+            }
+            
+        }
+
+        .cont-col2 {
+            width: 80%;
+            margin: auto;
+            margin-top: 2rem;
+
+            img {
+                width: 100%;
             }
         }
     }
+
     .cont-col2 {
-        margin-top: 5em;
-        max-height: 21em;
-    }
-}
+        width: 100%;
+        align-items: center;
 
-/* 
-===============
-SECOND SECTION
-===============
-*/
-
-.bf-cards {
-    color: white;
-    justify-content: center;
-    text-align: center;
-    .second-title {
-        font-weight: 700;
-        font-size: 2.25em;
-        line-height: 1.75em;
-    }
-    .second-subtitle {
-        font-weight: 500;
-        font-size: 1.2em;
-        line-height: 1.375em;
+       img {
+           width: 100%;
+       }
     }
 }
 
@@ -1582,45 +1819,79 @@ SECOND SECTION - CARDS
 =======================
 */
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 30em);
-    grid-template-rows: repeat(3, em);
-    width: 100%;
-    justify-content: center;
-    .card {
-        width: 25em;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+.dad-cards {
+    .bf-cards {
+        color: white;
         justify-content: center;
-        background-color: white;
-        flex-direction: column;
-        border-radius: 2%;
-        margin-top: 4em;
-        .image-card {
-            border-radius: 2%;
-        }
-        .info-card {
-            font-weight: 400;
-            font-size: 1.2em;
-            line-height: 1.9em;
-            margin-top: 1.2em;
-            margin-bottom: 1.2em;
-            margin-left: 1.3em;
-            .bold-name {
-                font-weight: 700;
-            }
-        }
-        .text-card {
-            color: #22343D;
+        text-align: center;
+        .second-title {
             font-weight: 700;
-            font-size: 1.7em;
-            line-height: 1.67em;
-            margin-bottom: 1.25em;
-            margin-left: 1.3em;
-            margin-right: 1.5em;
-        }    
+            font-size: 2.25em;
+            line-height: 1.75em;
+        }
+        .second-subtitle {
+            font-weight: 500;
+            font-size: 1.2em;
+            line-height: 1.375em;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 30em);
+        grid-template-rows: repeat(3, em);
+        width: 100%;
+        justify-content: center;
+        
+        .card {
+            color: black;
+            width: 25em;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            background-color: white;
+            flex-direction: column;
+            border-radius: 2%;
+            margin-top: 4em;
+            .image-card {
+                border-radius: 2%;
+                width: 100%;
+            }
+            .info-card {
+                font-weight: 400;
+                font-size: 1.2em;
+                line-height: 1.9em;
+                margin-top: 1.2em;
+                margin-bottom: 1.2em;
+                margin-left: 1.3em;
+                .bold-name {
+                    font-weight: 700;
+                }
+            }
+            .text-card {
+                color: #22343D;
+                font-weight: 700;
+                font-size: 1.7em;
+                line-height: 1.67em;
+                margin-bottom: 1.25em;
+                margin-left: 1.3em;
+                margin-right: 1.5em;
+            }    
+        }
+    }
+
+    .aft-cards {
+        color: white;
+        display: flex;
+        justify-content: center;
+        gap: .75em;
+        margin-top: 3em;
+        margin-bottom: 15em;
+
+        img {
+            width: 1.3%;
+        }
     }
 }
 
@@ -1630,34 +1901,32 @@ SECOND SECTION - DOWN CARDS
 ============================
 */
 
-.aft-cards {
-    color: white;
-    display: flex;
-    justify-content: center;
-    gap: .75em;
-    margin-top: 3em;
-    margin-bottom: 15em;
-}
-
 /* 
 =======================================
 SECOND SECTION - MEDIA QUERIES GENERAL
 =======================================
 */
 @media (max-width: 1020px) {
-    .cards {
-        display: flex;
-        flex-direction: column;
-    }
-    .bf-cards {
-        margin-top: 5em;
-        margin: auto 3em;
-        .second-title {
-            margin-bottom: .4em;
+    .dad-cards {
+        display: inline;
+
+        .cards {
+            display: flex;
+            flex-direction: column;
         }
-    }
-    .aft-cards {
-        margin-bottom: 8em;
+        .bf-cards {
+            margin-top: 5em;
+            margin: auto 3em;
+            .second-title {
+                margin-bottom: .4em;
+            }
+        }
+        .aft-cards {
+            margin-bottom: 8em;
+            img {
+                width: 3%;
+            }
+        }
     }
 }
 
@@ -1696,6 +1965,7 @@ THRID SECTION - CONTACT US
     margin-top: 5em;
     .social-media-circle {
         border-radius: 100%;
+        width: 3%;
     }
 }
 
@@ -1716,6 +1986,10 @@ THRID SECTION - MEDIA QUERIES GENERAL
 @media (max-width: 1020px) {
     .social-media {
         margin-top: 2em;
+
+        .social-media-circle {
+            width: 7%;
+        }
     }
     .map {
         max-width: 90%;
