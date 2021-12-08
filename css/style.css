@@ -807,6 +807,13 @@ PRODUCT SETTINGS
 .container > .get-this > .image {
   width: 45%;
 }
+.container > .our-clients > .title {
+  padding-top: 3rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+}
 
 /* 
 =====================
