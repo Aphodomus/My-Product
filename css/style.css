@@ -814,6 +814,20 @@ PRODUCT SETTINGS
   font-size: 40px;
   line-height: 60px;
 }
+.container > .our-clients > .clients {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container > .our-clients > .clients > .images {
+  display: flex;
+  justify-content: space-between;
+  width: 46%;
+}
+.container > .our-clients > .clients > .images img {
+  width: 43%;
+}
 
 /* 
 =====================
@@ -970,6 +984,19 @@ MEDIA QUERIES PRODUCT
   }
   .container > .get-this > .image {
     width: 100%;
+  }
+  .container > .our-clients > .title {
+    padding-top: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .container > .our-clients > .clients {
+    display: flex;
+  }
+  .container > .our-clients > .clients img {
+    width: 20%;
   }
 }
 /* 

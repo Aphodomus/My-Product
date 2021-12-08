@@ -931,6 +931,23 @@ PRODUCT SETTINGS
             font-size: 40px;
             line-height: 60px;
         }
+
+        >.clients {
+            padding-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            >.images {
+                display: flex;
+                justify-content: space-between;
+                width: 46%;
+
+                img {
+                    width: 43%;
+                }
+            }
+        }
     }
 }
 
@@ -1136,6 +1153,24 @@ MEDIA QUERIES PRODUCT
             >.image {
                 width: 100%;
                 //background: #02897A;
+            }
+        }
+
+        >.our-clients {
+            >.title {
+                padding-top: 3rem;
+                text-align: center;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 60px;
+            }
+    
+            >.clients {
+                display: flex;
+    
+                img {
+                    width: 20%;
+                }
             }
         }
     }
