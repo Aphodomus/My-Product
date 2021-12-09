@@ -6,7 +6,8 @@ DEFAULT SETTINGS
 
 .wrapper {
     padding-bottom: 9.5rem;
-    margin: 15px 10%;
+    //margin: 15px 10%;
+    padding: 15px 10%;
 }
 
 /* 
@@ -94,7 +95,7 @@ PRODUCT SETTINGS
 */
 
 .container {
-    padding: 15px 10%;
+    //padding: 15px 10%;
     background-color: #1f2e35;
 
     >.price-table {
@@ -218,28 +219,40 @@ PRODUCT SETTINGS
 
     >.enterprise-div {
         text-align: center;
+        background-color: #22343D;
+        margin-top: 6rem;
+        margin-bottom: 10rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
-        >.preTitle {
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 36px;
-        }
+        >.content {
+            padding: 15px 10%;
+            margin: 15px 10%;
 
-        >.title {
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
-        }
-
-        >.text {
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 27px;
-        }
-
-        button {
-            @include button-green(0.75rem 2rem);
-            margin-top: 2rem;
+            >.preTitle {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                padding-bottom: 1rem;
+            }
+    
+            >.title {
+                font-weight: bold;
+                font-size: 34px;
+                line-height: 51px;
+                padding-bottom: 0.5rem;
+            }
+    
+            >.text {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 27px;
+            }
+    
+            button {
+                @include button-green(0.75rem 2rem);
+                margin-top: 2rem;
+            }
         }
     }
 
@@ -297,11 +310,15 @@ PRODUCT SETTINGS
     }
 
     >.frequently-asked {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
         >.title {
             text-align: center;
             font-weight: bold;
             font-size: 34px;
             line-height: 51px;
+            padding-bottom: 0.5rem;
         }
 
         >.subtitle {
@@ -318,6 +335,8 @@ PRODUCT SETTINGS
         }
 
         >.cont {
+            margin-top: 2rem;
+
             >.accordion {
                 >.item {
                     margin-bottom: 1rem;
@@ -326,7 +345,7 @@ PRODUCT SETTINGS
                     box-shadow: 0.5rem;
 
                     >.link {
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                         color: #fff;
                         text-decoration: none;
                         width: 100%;
@@ -420,12 +439,12 @@ PRODUCT SETTINGS
 */
 
 .container {
-    padding: 15px 10%;
     background-color: #1f2e35;
 
     >.welcome-text-image {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 6rem;
 
         >.text {
             padding: 3rem 0;
@@ -440,6 +459,8 @@ PRODUCT SETTINGS
                 letter-spacing: 0px;
                 text-align: left;
                 margin-bottom: 0.6rem;
+                width: 65%;
+                padding-top: 3rem;
             }
 
             > p {
@@ -451,6 +472,7 @@ PRODUCT SETTINGS
                 letter-spacing: 0px;
                 text-align: left;
                 margin-bottom: 3rem;
+                width: 75%;
             }
 
             .welcomeFooter {
@@ -480,11 +502,17 @@ PRODUCT SETTINGS
         }
 
         >.image {
-            width: 50%;
+            width: 47%;
         }
     }
 
     >.products-for-you {
+        padding-bottom: 9.5rem;
+        background-image: url('../../assets/backgroundPFU.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 6rem;
+
         h1 {
             text-align: center;
             max-width: 500px;
@@ -495,6 +523,8 @@ PRODUCT SETTINGS
         >.content {
             display: flex;
             justify-content: space-between;
+            padding: 15px 10%;
+            margin: 15px 10%;
 
             >.item {
                 img {
@@ -503,6 +533,10 @@ PRODUCT SETTINGS
 
                 h3 {
                     padding-bottom: 0.4rem;
+                }
+
+                p {
+                    width: 80%;
                 }
             }
         }
@@ -587,6 +621,13 @@ PRODUCT SETTINGS
     }
 
     >.quick-process {
+        padding-bottom: 9.5rem;
+        background-image: url('../../assets/revert-background.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 1rem;
+        padding-top: 15rem;
+
         >.title {
             font-weight: 700;
             line-height: 48px;
@@ -604,6 +645,8 @@ PRODUCT SETTINGS
         >.content {
             display: flex;
             justify-content: space-between;
+            padding: 15px 10%;
+            margin: 15px 10%;
 
            img {
                width: 25%;
@@ -798,6 +841,7 @@ PRODUCT SETTINGS
 
     >.whats-client {
         text-align: center;
+        margin-top: 6rem;
 
         >.title {
             padding-bottom: 1rem;
@@ -895,6 +939,7 @@ PRODUCT SETTINGS
         background: #02897A;
         border-radius: 32px;
         padding: 0.5rem;
+        margin: 10% 15%;
 
         >.content {
             width: 59%;
@@ -924,6 +969,8 @@ PRODUCT SETTINGS
     }
 
     >.our-clients {
+        margin-bottom: 6rem;
+
         >.title {
             padding-top: 3rem;
             text-align: center;
@@ -951,6 +998,11 @@ PRODUCT SETTINGS
     }
 
     >.why-choose {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 2rem;
+        background-color: #22343D;
+        
         >.title {
             font-weight: bold;
             font-size: 34px;
@@ -962,6 +1014,8 @@ PRODUCT SETTINGS
             padding-top: 3rem;
             display: flex;
             justify-content: space-between;
+            padding: 15px 10%;
+            margin: 15px 10%;
 
             >.card {
                 width: 31%;
@@ -1049,6 +1103,11 @@ PRODUCT SETTINGS
 
     >.join-thousand {
         text-align: center;
+        background-color: #22343D;
+        padding-top: 2rem;
+        margin-top: 6rem;
+        margin-bottom: 10rem;
+        padding-bottom: 2rem;
 
         >.title {
             margin: auto;
@@ -1063,6 +1122,8 @@ PRODUCT SETTINGS
             justify-content: space-between;
             margin-top: 4rem;
             margin-bottom: 6rem;
+            padding: 15px 10%;
+            margin: 15px 10%;
 
             >.card {
                 width: 50%;
@@ -1093,6 +1154,8 @@ MEDIA QUERIES PRODUCT
 @media (max-width: 1200px) {
     .wrapper {
         padding-bottom: 4.5rem;
+        margin: 15px 5%;
+        padding: 15px 5%;
     }
 
     .container {
@@ -1105,10 +1168,12 @@ MEDIA QUERIES PRODUCT
 
                 h2 {
                     text-align: center;
+                    width: 100%;
                 }
 
                 p {
                     text-align: center;
+                    width: 100%;
                 }
 
                 >.welcomeFooter {
@@ -1122,13 +1187,20 @@ MEDIA QUERIES PRODUCT
         }
 
         >.products-for-you {
+            background-position-y: 90%;
+
             h1 {
                 padding-bottom: 4.2rem;
+                width: 25rem;
+                font-size: 2rem;
+                line-height: 48px;
             }
     
             >.content {
                 display: inline;
                 text-align: center;
+                margin: 15px 5%;
+                padding: 15px 5%;
     
                 >.item {
                     img {
@@ -1143,6 +1215,7 @@ MEDIA QUERIES PRODUCT
                         padding-bottom: 2rem;
                         margin: auto;
                         max-width: 70%;
+                        width: 35%;
                     }
                 }
             }
@@ -1173,7 +1246,7 @@ MEDIA QUERIES PRODUCT
         }
 
         >.image-text {
-            display: inline;
+            display: inline-block;
 
             >.image {
                 width: 100%;
@@ -1186,12 +1259,17 @@ MEDIA QUERIES PRODUCT
         }
 
         >.quick-process {
+            background-size: 100%;
+            padding-top: 2rem;
+
             >.subtitle {
                 padding: 0px 1%;
             }
     
             >.content {
-                display: inline;
+                display: inline-block;
+                margin: 15px 5%;
+                padding: 15px 5%;
                 
                 .reverse {
                     display: flex;
@@ -1214,8 +1292,13 @@ MEDIA QUERIES PRODUCT
                 >.item {
                     >.card {
                         display: flex;
+                        justify-content: space-between;
                         padding: 1rem;
                         align-items: center;
+
+                        p {
+                            width: 70%;
+                        }
                     }
                 }
             }
@@ -1290,6 +1373,8 @@ MEDIA QUERIES PRODUCT
         }
 
         >.our-clients {
+            margin-bottom: 1rem;
+
             >.clients {
                 display: inline-block;
     
@@ -1324,6 +1409,9 @@ MEDIA QUERIES PRODUCT
         }
 
         >.how-product {
+            margin-top: 5rem;
+            margin-bottom: -5rem;
+
             >.content {
                 display: inline-block;
 
@@ -1353,9 +1441,15 @@ MEDIA QUERIES PRODUCT
             }
     
             >.cards {
+                display: inline-block;
+
                 >.card {
                     margin-bottom: 3rem;
                     width: 100%;
+
+                    .image {
+                        width: 70%;
+                    }
                 }
             }
         }
@@ -1390,12 +1484,15 @@ MEDIA QUERIES NAVBAR
         }
 
         >.enterprise-div {
-            >.preTitle {
-                margin-bottom: 1.5rem;
-            }
-
-            >.title {
-                margin-bottom: 1.5rem;
+            >.content {
+                >.preTitle {
+                    margin-bottom: 1.5rem;
+                }
+    
+                >.title {
+                    margin-bottom: 1.5rem;
+                    width: 110%;
+                }
             }
         }
 
@@ -1665,6 +1762,8 @@ FIRST DIV
     display: flex;
     justify-content: space-between;
     margin-top: 6rem;
+    margin: 0;
+    margin-bottom: 4rem;
 
     .cont-col1 {
         width: 48%;
