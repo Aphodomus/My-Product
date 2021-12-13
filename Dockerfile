@@ -1,6 +1,6 @@
 FROM node:alpine
 
-WORKDIR /home/daniel/InternProgram
+WORKDIR /home/interpol/interns-program-myproduct/
 
 COPY package*.json ./
 RUN npm install
