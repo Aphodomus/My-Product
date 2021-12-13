@@ -8,7 +8,7 @@ const app = express();
 app.use('/css',express.static(__dirname +'/css'));
 app.use('/assets',express.static(__dirname +'/assets'));
 
-app.get('/index.html', (request, response) => {
+app.get('/src', (request, response) => {
     response.sendFile(__dirname + "/src/index.html");
 })
 app.get('/customers.html', (request, response) => {

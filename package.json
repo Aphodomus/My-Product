@@ -4,9 +4,8 @@
   "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "build": "sass ./scss/style.scss ./css/style.css --watch"
+    "build": "parcel src/index.htmml"
   },
   "repository": {
     "type": "git",
@@ -20,11 +19,10 @@
   },
   "homepage": "https://gitlab.com/Aphodomus/interns-program-myproduct#readme",
   "devDependencies": {
-    "nodemon": "^2.0.15",
-    "sass": "^1.44.0"
-  },
-  "dependencies": {
     "express": "^4.17.1",
-    "parcel-bundler": "^1.9.4"
+    "nodemon": "^2.0.15",
+    "parcel": "^2.0.1",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.44.0"
   }
 }
