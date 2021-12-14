@@ -627,8 +627,7 @@ PRODUCT SETTINGS
         padding-top: 15rem;
 
         >.title {
-            font-weight: 700;
-            line-height: 48px;
+            @include font-settings(700, 32px, normal, 48px);
             text-align: center;
             padding-bottom: 1rem;
         }
@@ -669,6 +668,10 @@ PRODUCT SETTINGS
 
         >.contactExpert {
             text-align: center;
+
+            button {
+                @include button-hover();
+            }
 
             button {
                 @include button-green(0.75rem 2rem);

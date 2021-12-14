@@ -593,6 +593,8 @@ PRODUCT SETTINGS
 }
 .container > .quick-process > .title {
   font-weight: 700;
+  font-size: 32px;
+  font-style: normal;
   line-height: 48px;
   text-align: center;
   padding-bottom: 1rem;
@@ -626,6 +628,11 @@ PRODUCT SETTINGS
 }
 .container > .quick-process > .contactExpert {
   text-align: center;
+}
+.container > .quick-process > .contactExpert button:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 .container > .quick-process > .contactExpert button {
   color: #fff;
