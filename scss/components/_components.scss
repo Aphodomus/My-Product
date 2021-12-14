@@ -90,7 +90,6 @@ input[type="checkbox"] {
     user-select: none;
 }
 
-
 /* 
 ===============
 PRODUCT SETTINGS
@@ -431,17 +430,6 @@ PRODUCT SETTINGS
             width: 45%;
         }
     }
-}
-
-
-/* 
-===============
-PRODUCT SETTINGS
-===============
-*/
-
-.container {
-    background-color: $default-background-color;
 
     >.welcome-text-image {
         display: flex;

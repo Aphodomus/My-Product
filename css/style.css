@@ -402,15 +402,6 @@ PRODUCT SETTINGS
 .container > .get-this > .image {
   width: 45%;
 }
-
-/* 
-===============
-PRODUCT SETTINGS
-===============
-*/
-.container {
-  background-color: #1f2e35;
-}
 .container > .welcome-text-image {
   display: flex;
   justify-content: space-between;
