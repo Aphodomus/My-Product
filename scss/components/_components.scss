@@ -634,9 +634,11 @@ PRODUCT SETTINGS
 
         >.subtitle {
             text-align: center;
-            font-weight: 500;
+            @include font-settings(500, 16px, normal, 26px);
             padding: 0px 20%;
+            margin: auto;
             padding-bottom: 1rem;
+            width: 80%;
         }
 
         >.content {
