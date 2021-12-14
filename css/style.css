@@ -89,6 +89,9 @@ NAVBAR SETTINGS
   padding: 0.75rem 2rem;
   font-size: 16px;
 }
+.nav-bar .frame {
+  width: 4%;
+}
 
 .menu {
   display: flex;
@@ -1336,7 +1339,7 @@ MEDIA QUERIES NAVBAR
     width: 100%;
   }
 }
-@media (max-width: 1020px) {
+@media (max-width: 1200px) {
   .menu {
     display: none;
     position: absolute;
@@ -1345,6 +1348,10 @@ MEDIA QUERIES NAVBAR
     left: 0;
     text-align: center;
     padding: 16px 0;
+  }
+  .menu img {
+    width: 8%;
+    display: contents;
   }
   .menu li:hover {
     display: inline-block;

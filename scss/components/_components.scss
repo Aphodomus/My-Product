@@ -58,6 +58,10 @@ NAVBAR SETTINGS
     .signUp {
         @include button-green(0.75rem 2rem)
     }
+
+    .frame {
+        width: 4%;
+    }
 }
 
 .menu {
@@ -1571,7 +1575,7 @@ MEDIA QUERIES NAVBAR
     }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1200px) {
     .menu {
         display: none;
         position: absolute;
@@ -1580,6 +1584,11 @@ MEDIA QUERIES NAVBAR
         left: 0;
         text-align: center;
         padding: 16px 0;
+
+        img {
+            width: 8%;
+            display:contents;
+        }
 
         li {
             &:hover {
