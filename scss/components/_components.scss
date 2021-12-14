@@ -6,7 +6,6 @@ DEFAULT SETTINGS
 
 .wrapper {
     padding-bottom: 9.5rem;
-    //margin: 15px 10%;
     padding: 15px 10%;
 }
 
@@ -100,7 +99,7 @@ PRODUCT SETTINGS
 
 .container {
     //padding: 15px 10%;
-    background-color: #1f2e35;
+    background-color: $default-background-color;
 
     >.price-table {
         text-align: center;
