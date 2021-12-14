@@ -836,6 +836,10 @@ PRODUCT SETTINGS
                 }
 
                 button {
+                    @include button-hover();
+                }
+
+                button {
                     @include button-green(0.75rem 2rem);
                     margin-top: 2rem;
                     margin-bottom: 2rem;
@@ -947,12 +951,11 @@ PRODUCT SETTINGS
         margin: 10% 15%;
 
         >.content {
-            width: 59%;
+            width: 52%;
             padding: 2rem;
 
             >.title {
-                font-size: 32px;
-                line-height: 151.4%;
+                @include font-settings(600, 32px, normal, 151.4%);
             }
 
             >.getThis {
@@ -960,9 +963,7 @@ PRODUCT SETTINGS
                     @include button-green(0.75rem 2rem);
                     background: #fff;
                     color: #02897A;
-                    font-weight: 600;
-                    font-size: 1.2rem;
-                    line-height: 30px;
+                    @include font-settings(600, 20px, normal, 30px);
                     margin-top: 2.5rem;
                 }
             }

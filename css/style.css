@@ -786,6 +786,11 @@ PRODUCT SETTINGS
   font-weight: 800;
   color: #22343D;
 }
+.container > .price-table > .cards > .card button:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
 .container > .price-table > .cards > .card button {
   color: #fff;
   background-color: #02897A;
@@ -887,11 +892,13 @@ PRODUCT SETTINGS
   margin: 10% 15%;
 }
 .container > .get-this > .content {
-  width: 59%;
+  width: 52%;
   padding: 2rem;
 }
 .container > .get-this > .content > .title {
+  font-weight: 600;
   font-size: 32px;
+  font-style: normal;
   line-height: 151.4%;
 }
 .container > .get-this > .content > .getThis button {
@@ -904,7 +911,8 @@ PRODUCT SETTINGS
   background: #fff;
   color: #02897A;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 20px;
+  font-style: normal;
   line-height: 30px;
   margin-top: 2.5rem;
 }
