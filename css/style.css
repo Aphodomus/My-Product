@@ -797,10 +797,11 @@ MAIN
   padding-bottom: 2rem;
 }
 .container > .join-thousand > .title {
-  margin: auto;
   font-weight: bold;
   font-size: 32px;
+  font-style: normal;
   line-height: 48px;
+  margin: auto;
   width: 50%;
 }
 .container > .join-thousand > .cards {
@@ -839,18 +840,21 @@ MAIN
 .container > .enterprise-div > .content > .preTitle {
   font-weight: 600;
   font-size: 24px;
+  font-style: normal;
   line-height: 36px;
   padding-bottom: 1rem;
 }
 .container > .enterprise-div > .content > .title {
   font-weight: bold;
   font-size: 34px;
+  font-style: normal;
   line-height: 51px;
   padding-bottom: 0.5rem;
 }
 .container > .enterprise-div > .content > .text {
   font-weight: normal;
   font-size: 18px;
+  font-style: normal;
   line-height: 27px;
 }
 .container > .enterprise-div > .content button {
@@ -862,9 +866,15 @@ MAIN
   font-size: 16px;
   margin-top: 2rem;
 }
+.container > .enterprise-div > .content button:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
 .container > .product-being > .title {
   font-weight: bold;
   font-size: 34px;
+  font-style: normal;
   line-height: 51px;
 }
 .container > .product-being > .content {
@@ -891,35 +901,37 @@ MAIN
   width: 10%;
 }
 .container > .product-being > .content > .cards > .card > .imageTitle > .title {
-  margin-left: 1rem;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
+  font-style: normal;
   line-height: 36px;
+  margin-left: 1rem;
 }
 .container > .product-being > .content > .cards > .card > .description {
-  margin-top: 1rem;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  font-style: normal;
   line-height: 28px;
+  margin-top: 1rem;
 }
 .container > .frequently-asked {
   margin-top: 6rem;
   margin-bottom: 6rem;
 }
 .container > .frequently-asked > .title {
-  text-align: center;
   font-weight: bold;
   font-size: 34px;
+  font-style: normal;
   line-height: 51px;
+  text-align: center;
   padding-bottom: 0.5rem;
 }
 .container > .frequently-asked > .subtitle {
-  text-align: center;
   font-weight: normal;
   font-size: 18px;
+  font-style: normal;
   line-height: 27px;
+  text-align: center;
 }
 .container > .frequently-asked *::before, .container > .frequently-asked ::after {
   margin: 0;

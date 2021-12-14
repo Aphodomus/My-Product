@@ -784,10 +784,8 @@ MAIN
         padding-bottom: 2rem;
 
         >.title {
+            @include font-settings(bold, 32px, normal, 48px);
             margin: auto;
-            font-weight: bold;
-            font-size: 32px;
-            line-height: 48px;
             width: 50%;
         }
 
@@ -831,26 +829,21 @@ MAIN
             margin: 15px 10%;
 
             >.preTitle {
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 36px;
+                @include font-settings(600, 24px, normal, 36px);
                 padding-bottom: 1rem;
             }
     
             >.title {
-                font-weight: bold;
-                font-size: 34px;
-                line-height: 51px;
+                @include font-settings(bold, 34px, normal, 51px);
                 padding-bottom: 0.5rem;
             }
     
             >.text {
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 27px;
+                @include font-settings(normal, 18px, normal, 27px);
             }
     
             button {
+                @include button-hover();
                 @include button-green(0.75rem 2rem);
                 margin-top: 2rem;
             }
@@ -859,9 +852,7 @@ MAIN
 
     >.product-being {
         >.title {
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
         }
 
         >.content {
@@ -890,20 +881,14 @@ MAIN
                         }
 
                         >.title {
+                            @include font-settings(600, 24px, normal, 36px);
                             margin-left: 1rem;
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 24px;
-                            line-height: 36px;
                         }
                     }
 
                     >.description {
+                        @include font-settings(normal, 16px, normal, 28px);
                         margin-top: 1rem;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 28px;
                     }
                 }
             }
@@ -915,18 +900,14 @@ MAIN
         margin-bottom: 6rem;
 
         >.title {
+            @include font-settings(bold, 34px, normal, 51px);
             text-align: center;
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
             padding-bottom: 0.5rem;
         }
 
         >.subtitle {
+            @include font-settings(normal, 18px, normal, 27px);
             text-align: center;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 27px;
         }
 
         *::before, ::after {
