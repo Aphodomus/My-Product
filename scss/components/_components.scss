@@ -658,11 +658,9 @@ MAIN
         margin-bottom: 6rem;
 
         >.title {
+            @include font-settings(bold, 40px, normal, 60px);
             padding-top: 3rem;
             text-align: center;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 60px;
         }
 
         >.clients {
@@ -690,9 +688,7 @@ MAIN
         background-color: #22343D;
         
         >.title {
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
             text-align: center;
         }
 
@@ -717,18 +713,14 @@ MAIN
                 }
 
                 >.title {
+                    @include font-settings(bold, 18px, normal, 33px);
                     padding-top: 1rem;
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                    line-height: 33px;
                     letter-spacing: 0.1px;
                 }
 
                 >.description {
                     padding-top: 1rem;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 27px;
+                    @include font-settings(normal, 16px, normal, 27px);
                     letter-spacing: 0.2px;
                 }
             }
