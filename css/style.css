@@ -520,11 +520,6 @@ MAIN
   font-weight: 800;
   color: #22343D;
 }
-.container > .price-table > .cards > .card button:hover {
-  background-color: #4c9e9e;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
 .container > .price-table > .cards > .card button {
   color: #fff;
   background-color: #02897A;
@@ -534,6 +529,11 @@ MAIN
   font-size: 16px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.container > .price-table > .cards > .card button:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 .container > .whats-client {
   text-align: center;
@@ -728,10 +728,12 @@ MAIN
 }
 .container > .how-product {
   text-align: center;
+  margin-top: 5rem;
 }
 .container > .how-product > .title {
   font-weight: bold;
   font-size: 34px;
+  font-style: normal;
   line-height: 51px;
   margin-bottom: 4rem;
 }
@@ -749,21 +751,29 @@ MAIN
 .container > .how-product > .content img {
   width: 47%;
 }
-.container > .how-product > .content > .text {
+.container > .how-product > .content .text {
   width: 47%;
 }
-.container > .how-product > .content > .text > .preTitle {
+.container > .how-product > .content .text > .preTitle {
   font-weight: 500;
   font-size: 20px;
+  font-style: normal;
   line-height: 30px;
   margin-bottom: 1rem;
 }
-.container > .how-product > .content > .text > .title {
+.container > .how-product > .content .text > .title {
+  font-weight: 600;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 36px;
   margin-bottom: 1rem;
 }
-.container > .how-product > .content > .text > .description {
+.container > .how-product > .content .text > .description {
+  font-weight: normal;
   font-size: 16px;
+  font-style: normal;
   line-height: 28px;
+  width: 80%;
 }
 .container > .how-product button {
   color: #fff;
@@ -772,6 +782,11 @@ MAIN
   border-radius: 5px;
   padding: 0.75rem 2rem;
   font-size: 16px;
+}
+.container > .how-product button:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 .container > .join-thousand {
   text-align: center;

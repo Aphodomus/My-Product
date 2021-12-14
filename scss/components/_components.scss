@@ -511,9 +511,6 @@ MAIN
 
                 button {
                     @include button-hover();
-                }
-
-                button {
                     @include button-green(0.75rem 2rem);
                     margin-top: 2rem;
                     margin-bottom: 2rem;
@@ -729,11 +726,10 @@ MAIN
 
     >.how-product {
         text-align: center;
+        margin-top: 5rem;
 
         >.title {
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
             margin-bottom: 4rem;
         }
 
@@ -753,28 +749,28 @@ MAIN
                 width: 47%;
             }
 
-            >.text {
+            .text {
                 width: 47%;
 
                 >.preTitle {
-                    font-weight: 500;
-                    font-size: 20px;
-                    line-height: 30px;
+                    @include font-settings(500, 20px, normal, 30px);
                     margin-bottom: 1rem;
                 }
 
                 >.title {
+                    @include font-settings(600, 24px, normal, 36px);
                     margin-bottom: 1rem;
                 }
 
                 >.description {
-                    font-size: 16px;
-                    line-height: 28px;
+                    @include font-settings(normal, 16px, normal, 28px);
+                    width: 80%;
                 }
             }
         }
 
         button {
+            @include button-hover();
             @include button-green(0.75rem 2rem);
         }
     }
