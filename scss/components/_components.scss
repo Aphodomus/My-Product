@@ -73,7 +73,7 @@ NAVBAR SETTINGS
         padding: 4px 4px;
 
         &:hover {
-            background-color: #4c9e9e;
+            background-color: $background-color-navbar;
             border-radius: 5px;
             transition: 0.3s ease;
         }
@@ -98,7 +98,6 @@ PRODUCT SETTINGS
 */
 
 .container {
-    //padding: 15px 10%;
     background-color: $default-background-color;
 
     >.price-table {
