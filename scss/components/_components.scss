@@ -440,14 +440,9 @@ PRODUCT SETTINGS
             padding: 3rem 0;
             width: 50%;
 
-            > h2 {
-                font-family: Poppins;
-                font-size: 40px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 60px;
-                letter-spacing: 0px;
-                text-align: left;
+             h2 {
+                @include font-settings(700, 40px, normal, 60px);
+                text-align: justify;
                 margin-bottom: 0.6rem;
                 width: 65%;
                 padding-top: 3rem;
