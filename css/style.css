@@ -478,7 +478,6 @@ PRODUCT SETTINGS
   display: flex;
   justify-content: space-between;
   padding: 15px 10%;
-  margin: 15px 10%;
 }
 .container > .products-for-you > .content > .item img {
   width: 51px;
@@ -487,7 +486,7 @@ PRODUCT SETTINGS
   padding-bottom: 0.4rem;
 }
 .container > .products-for-you > .content > .item p {
-  width: 80%;
+  width: 76%;
 }
 .container > .products-for-you > .signUpNow {
   text-align: center;
