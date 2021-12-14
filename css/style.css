@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-html {
-  color: #fff;
-}
-
 img {
   width: 100%;
 }
@@ -41,6 +37,16 @@ li {
 DEFAULT SETTINGS
 ===============
 */
+:root() {
+  --background-color-default: #1f2e35;
+  --color-default: #fff;
+}
+
+.dark-mode:root {
+  --background-color-default: #fff;
+  --color-default: #090c0e;
+}
+
 .wrapper {
   padding-bottom: 9.5rem;
   padding: 15px 10%;
@@ -56,11 +62,11 @@ NAVBAR SETTINGS
   align-items: center;
   justify-content: space-between;
   padding: 15px 10%;
-  background-color: #1f2e35;
-  color: #fff;
+  background-color: var(--background-color-default);
+  color: var(--color-default);
 }
 .nav-bar .links a {
-  color: #fff;
+  color: var(--color-default);
 }
 .nav-bar .links a:hover {
   font-weight: 600;
@@ -74,9 +80,9 @@ NAVBAR SETTINGS
   width: 40%;
 }
 .nav-bar .signIn {
-  color: #fff;
-  background-color: #1f2e35;
-  border: 1px solid #fff;
+  color: var(--color-default);
+  background-color: var(--background-color-default);
+  border: 1px solid var(--color-default);
   border-radius: 5px;
   padding: 0.75rem 2rem;
   font-size: 16px;
@@ -124,7 +130,8 @@ MAIN
 ===============
 */
 .container {
-  background-color: #1f2e35;
+  background-color: var(--background-color-default);
+  color: var(--color-default);
   /*
   ===================
   PAGE PRODUCT
@@ -1352,7 +1359,7 @@ FOOTER SETTINGS
   align-items: center;
   justify-content: space-between;
   padding: 5em 10%;
-  background-color: #1f2e35;
+  background-color: var(--background-color-default);
   color: #fff;
   margin-top: 7%;
 }
@@ -1484,7 +1491,7 @@ FOOTER MEDIA QUERIES
 
   .lasttxt {
     text-align: center;
-    background-color: #1f2e35;
+    background-color: var(--background-color-default);
     color: white;
     padding-bottom: 10%;
     padding-top: -8%;
@@ -1526,7 +1533,7 @@ FIRST DIV
   width: 80%;
   border-radius: 48px;
   height: 3.5rem;
-  background-color: #1f2e35;
+  background-color: var(--background-color-default);
 }
 .cointainer1 .cont-col1 .box-mail1 .join-now-box {
   background-color: transparent;
@@ -1863,7 +1870,7 @@ FORM SECTION - MEDIA QUERIES
 */
 @media (max-width: 1020px) {
   .form-bg {
-    background-color: #1f2e35;
+    background-color: var(--background-color-default);
   }
 
   .send-msg {
