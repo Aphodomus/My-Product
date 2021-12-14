@@ -422,13 +422,11 @@ PRODUCT SETTINGS
   padding-top: 3rem;
 }
 .container > .welcome-text-image > .text > p {
-  font-family: Poppins;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0px;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 3rem;
   width: 75%;
 }
