@@ -473,9 +473,9 @@ PRODUCT SETTINGS
                     }
 
                     p {
-                        color: #02897A;
+                        color: $color-watch;
                         text-decoration: underline;
-                        font-weight: 600;
+                        @include font-settings(600, 16px, normal, 24px);
                     }
                 }
             }
