@@ -466,7 +466,7 @@ const HOST = '0.0.0.0';
 const app = express();
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/assets', express.static(__dirname + '/assets'));
-app.get('/index.html', (request, response)=>{
+app.get('/src', (request, response)=>{
     response.sendFile(__dirname + "/src/index.html");
 });
 app.get('/customers.html', (request, response)=>{
@@ -2190,8 +2190,8 @@ var zlib = require('zlib');
 }
 
 },{"http-errors":"ccbTr","raw-body":"ejhEy","iconv-lite":"lK1wC","on-finished":"7fGLr","zlib":"50HW3"}],"ejhEy":[function(require,module,exports) {
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 var Buffer = require("buffer").Buffer;
 /*!
  * raw-body
@@ -8678,8 +8678,8 @@ Object.defineProperty(Duplex.prototype, 'destroyed', {
 });
 
 },{"process":"lDnB8","./_stream_readable":"5nYdQ","./_stream_writable":"hH9VX","inherits":"hImJg"}],"hH9VX":[function(require,module,exports) {
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -22939,9 +22939,9 @@ http.METHODS = [
 ];
 
 },{"./lib/request":"82Klt","./lib/response":"99utV","xtend":"2GMXX","builtin-status-codes":"f6S4u","url":"1F0iP"}],"82Klt":[function(require,module,exports) {
+var Buffer = require("buffer").Buffer;
 var process = require("process");
 var global = arguments[3];
-var Buffer = require("buffer").Buffer;
 var capability = require('./capability');
 var inherits = require('inherits');
 var response1 = require('./response');
@@ -23265,9 +23265,9 @@ xhr1 = null // Help gc
 ;
 
 },{}],"99utV":[function(require,module,exports) {
-var global = arguments[3];
-var Buffer = require("buffer").Buffer;
 var process = require("process");
+var Buffer = require("buffer").Buffer;
+var global = arguments[3];
 var capability = require('./capability');
 var inherits = require('inherits');
 var stream = require('readable-stream');
@@ -25135,8 +25135,8 @@ exports.constants = {
 };
 
 },{"randombytes":"hkZOB","create-hash":"2XwVm","create-hmac":"bPGDT","browserify-sign/algos":"cWMTm","pbkdf2":"8ySUx","browserify-cipher":"agMDI","diffie-hellman":"iXtxj","browserify-sign":"amz9p","create-ecdh":"eS4Yo","public-encrypt":"2jN85","randomfill":"5thh9"}],"hkZOB":[function(require,module,exports) {
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 'use strict';
 // limit of Crypto.getRandomValues()
 // https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues
@@ -25454,8 +25454,8 @@ exports.finished = require('./lib/internal/streams/end-of-stream.js');
 exports.pipeline = require('./lib/internal/streams/pipeline.js');
 
 },{"./lib/_stream_readable.js":"aOCAo","./lib/_stream_writable.js":"MMMvc","./lib/_stream_duplex.js":"keMlu","./lib/_stream_transform.js":"7pzKU","./lib/_stream_passthrough.js":"591DR","./lib/internal/streams/end-of-stream.js":"4Z7wv","./lib/internal/streams/pipeline.js":"9w3aQ"}],"aOCAo":[function(require,module,exports) {
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -29512,8 +29512,8 @@ module.exports = function(iterations, keylen) {
 };
 
 },{}],"1u4Cg":[function(require,module,exports) {
-var global = arguments[3];
 var process = require("process");
+var global = arguments[3];
 var defaultEncoding;
 /* istanbul ignore next */ if (global.process && global.process.browser) defaultEncoding = 'utf-8';
 else if (global.process && global.process.version) {
@@ -37606,8 +37606,8 @@ exports.finished = require('./lib/internal/streams/end-of-stream.js');
 exports.pipeline = require('./lib/internal/streams/pipeline.js');
 
 },{"./lib/_stream_readable.js":"8FiDQ","./lib/_stream_writable.js":"bB8CX","./lib/_stream_duplex.js":"lIqO3","./lib/_stream_transform.js":"421IA","./lib/_stream_passthrough.js":"bl28u","./lib/internal/streams/end-of-stream.js":"1iM9p","./lib/internal/streams/pipeline.js":"dTEJD"}],"8FiDQ":[function(require,module,exports) {
-var global = arguments[3];
 var process = require("process");
+var global = arguments[3];
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
