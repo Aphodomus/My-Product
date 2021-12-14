@@ -649,11 +649,16 @@ PRODUCT SETTINGS
   margin-top: 2rem;
 }
 .container > .contents-strategies > .title {
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 34px;
+  font-style: normal;
   line-height: 51px;
 }
 .container > .contents-strategies > .subtitle {
   font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
 }
 .container > .contents-strategies > .cards {
   display: flex;
@@ -694,8 +699,16 @@ PRODUCT SETTINGS
   text-align: center;
 }
 .container > .price-table > .title {
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 34px;
+  font-style: normal;
   line-height: 51px;
+}
+.container > .price-table > .subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
 }
 .container > .price-table > .cards {
   display: flex;
@@ -728,11 +741,16 @@ PRODUCT SETTINGS
 }
 .container > .price-table > .cards > .card > .title {
   font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
   line-height: 40px;
-  font-size: 1rem;
   padding-top: 1rem;
 }
 .container > .price-table > .cards > .card > .subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 40px;
   font-size: 0.8rem;
   margin-bottom: 2rem;
 }
@@ -783,11 +801,17 @@ PRODUCT SETTINGS
   margin-top: 6rem;
 }
 .container > .whats-client > .title {
+  font-weight: bold;
+  font-size: 34px;
+  font-style: normal;
+  line-height: 57px;
   padding-bottom: 1rem;
 }
 .container > .whats-client > .subtitle {
-  text-align: center;
   font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px;
   padding: 0px 26%;
   padding-bottom: 1rem;
 }

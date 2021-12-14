@@ -684,12 +684,11 @@ PRODUCT SETTINGS
 
     >.contents-strategies {
         >.title {
-            font-weight: 700;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
         }
 
         >.subtitle {
-            font-weight: 500;
+            @include font-settings(500, 16px, normal, 26px);
         }
 
         >.cards {
@@ -742,8 +741,11 @@ PRODUCT SETTINGS
         text-align: center;
 
         >.title {
-            font-weight: 700;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
+        }
+
+        >.subtitle {
+            @include font-settings(500, 16px, normal, 24px);
         }
 
         >.cards {
@@ -754,6 +756,7 @@ PRODUCT SETTINGS
             #change {
                 background: #02897A;
                 color: #fff;
+
                 >.price {
                     >.value {
                         color: #fff;
@@ -784,13 +787,12 @@ PRODUCT SETTINGS
                 width: 28%;
 
                 >.title {
-                    font-weight: 700;
-                    line-height: 40px;
-                    font-size: 1rem;
+                    @include font-settings(700, 24px, normal, 40px);
                     padding-top: 1rem;
                 }
 
                 >.subtitle {
+                    @include font-settings(normal, 16px, normal, 40px);
                     font-size: 0.8rem;
                     margin-bottom: 2rem;
                 }
@@ -847,12 +849,12 @@ PRODUCT SETTINGS
         margin-top: 6rem;
 
         >.title {
+            @include font-settings(bold, 34px, normal, 57px);
             padding-bottom: 1rem;
         }
 
         >.subtitle {
-            text-align: center;
-            font-weight: 500;
+            @include font-settings(500, 16px, normal, 28px);
             padding: 0px 26%;
             padding-bottom: 1rem;
         }
