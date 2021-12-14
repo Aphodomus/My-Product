@@ -496,6 +496,11 @@ PRODUCT SETTINGS
 .container > .products-for-you > .signUpNow {
   text-align: center;
 }
+.container > .products-for-you > .signUpNow button:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
 .container > .products-for-you > .signUpNow .buttonSignUpNow {
   color: #fff;
   background-color: #02897A;

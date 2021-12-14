@@ -526,6 +526,10 @@ PRODUCT SETTINGS
 
         >.signUpNow {
             text-align: center;
+            
+            button {
+                @include button-hover();
+            }
 
             .buttonSignUpNow {
                 @include button-green(0.75rem 2rem);
