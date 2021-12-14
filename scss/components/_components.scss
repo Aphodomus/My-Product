@@ -459,6 +459,10 @@ PRODUCT SETTINGS
                 display: flex;
                 align-items: center;
 
+                button {
+                    @include button-hover();
+                }
+
                 .getStarted {
                     @include button-green(0.75rem 2rem)
                 }

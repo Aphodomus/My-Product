@@ -434,6 +434,11 @@ PRODUCT SETTINGS
   display: flex;
   align-items: center;
 }
+.container > .welcome-text-image > .text .welcomeFooter button:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
 .container > .welcome-text-image > .text .welcomeFooter .getStarted {
   color: #fff;
   background-color: #02897A;
