@@ -513,16 +513,36 @@ PRODUCT SETTINGS
 .container > .text-image {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5rem;
 }
 .container > .text-image > .text {
   padding: 1rem 0;
-  width: 48%;
+  width: 44%;
+}
+.container > .text-image > .text .preTitle {
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+}
+.container > .text-image > .text .title {
+  font-weight: bold;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 48px;
 }
 .container > .text-image > .text .subtitle {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
 }
 .container > .text-image > .text p {
-  padding-bottom: 0.8rem;
+  padding-bottom: 1.2rem;
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
 }
 .container > .text-image > .text h1 {
   padding-bottom: 1.3rem;
@@ -533,6 +553,7 @@ PRODUCT SETTINGS
 .container > .image-text {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5rem;
 }
 .container > .image-text > .image {
   width: 48%;

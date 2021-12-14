@@ -526,7 +526,7 @@ PRODUCT SETTINGS
 
         >.signUpNow {
             text-align: center;
-            
+
             button {
                 @include button-hover();
             }
@@ -541,17 +541,27 @@ PRODUCT SETTINGS
     >.text-image {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 5rem;
 
         >.text {
             padding: 1rem 0;
-            width: 48%;
+            width: 44%;
+
+            .preTitle {
+                @include font-settings(600, 16px, normal, 24px);
+            }
+
+            .title {
+                @include font-settings(bold, 32px, normal, 48px);
+            }
 
             .subtitle {
-                font-weight: bold;
+                @include font-settings(600, 16px, normal, 26px);
             }
 
             p {
-                padding-bottom: 0.8rem;
+                padding-bottom: 1.2rem;
+                @include font-settings(normal, 16px, normal, 26px);
             }
 
             h1 {
@@ -567,6 +577,7 @@ PRODUCT SETTINGS
     >.image-text {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 5rem;
 
         >.image {
             width: 48%;
