@@ -508,7 +508,7 @@ PRODUCT SETTINGS
 
     >.products-for-you {
         padding-bottom: 9.5rem;
-        background-image: url('../../assets/backgroundPFU.svg');
+        background-image: url('../assets/backgroundPFU.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position-y: 6rem;
@@ -622,7 +622,7 @@ PRODUCT SETTINGS
 
     >.quick-process {
         padding-bottom: 9.5rem;
-        background-image: url('../../assets/revert-background.svg');
+        background-image: url('../assets/revert-background.svg');
         background-repeat: no-repeat;
         background-size: contain;
         margin-top: 1rem;
@@ -1511,7 +1511,7 @@ MEDIA QUERIES NAVBAR
                 }
 
                 >.image {
-                    content: url('../../assets/product2-image.svg');
+                    content: url('../assets/product2-image.svg');
                 }
     
                 >.cards {
