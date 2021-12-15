@@ -4,9 +4,18 @@ DEFAULT SETTINGS
 ===============
 */
 
+:root() {
+    --background-color-default: #1f2e35;
+    --color-default: #fff;
+}
+
+.dark-mode:root {
+    --background-color-default: #fff;
+    --color-default: #090c0e;
+}
+
 .wrapper {
     padding-bottom: 9.5rem;
-    //margin: 15px 10%;
     padding: 15px 10%;
 }
 
@@ -21,12 +30,12 @@ NAVBAR SETTINGS
     align-items: center;
     justify-content: space-between;
     padding: 15px 10%;
-    background-color: #1f2e35;
-    color: #fff;
+    background-color: var(--background-color-default);
+    color: var(--color-default);
 
     .links {
         a {
-            color: #fff;
+            color: var(--color-default);
 
             &:hover {
                 font-weight: 600;
@@ -47,9 +56,9 @@ NAVBAR SETTINGS
     }
 
     .signIn {
-        color: #fff;
-        background-color: #1f2e35;
-        border: 1px solid #fff;
+        color: var(--color-default);
+        background-color: var(--background-color-default);
+        border: 1px solid var(--color-default);;
         border-radius: 5px;
         padding: 0.75rem 2rem;
         font-size: 16px;
@@ -57,6 +66,10 @@ NAVBAR SETTINGS
 
     .signUp {
         @include button-green(0.75rem 2rem)
+    }
+
+    .frame {
+        width: 4%;
     }
 }
 
@@ -70,7 +83,7 @@ NAVBAR SETTINGS
         padding: 4px 4px;
 
         &:hover {
-            background-color: #4c9e9e;
+            background-color: $background-color-navbar;
             border-radius: 5px;
             transition: 0.3s ease;
         }
@@ -87,359 +100,22 @@ input[type="checkbox"] {
     user-select: none;
 }
 
-
 /* 
 ===============
-PRODUCT SETTINGS
+MAIN
 ===============
 */
 
-.container {
-    //padding: 15px 10%;
-    background-color: #1f2e35;
-
-    >.price-table {
-        text-align: center;
-
-        >.preTitle {
-            font-weight: 600;
-            font-size: 1.5rem;
-            line-height: 36px;
-            margin-bottom: 2rem;
-        }
-
-        >.title {
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 60px;
-            margin-bottom: 1rem;
-        }
-
-        >.subtitle {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        >.cards {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2.5rem;
-
-            #change {
-                background: #02897A;
-                color: #fff;
-                >.price {
-                    >.value {
-                        color: #fff;
-                    }
-
-                    >.simbol {
-                        >.dolar {
-                            color: #fff;
-                        }
-                    }
-                }
-
-                >.item {
-                    color: #fff;
-                }
-
-                button {
-                    background: #fff;
-                    color: #02897A;
-                }
-            }
-
-            >.card {
-                background: #fff;
-                color: black;
-                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-                border-radius: 8px;
-                width: 28%;
-
-                >.title {
-                    font-weight: 700;
-                    line-height: 40px;
-                    font-size: 1rem;
-                    padding-top: 1rem;
-                }
-
-                >.subtitle {
-                    font-size: 0.8rem;
-                    margin-bottom: 2rem;
-                }
-
-                >.price {
-                    display: flex;
-                    justify-content: center;
-                    margin: 1rem;
-                    padding-bottom: 2rem;
-
-                    >.value {
-                        padding: auto;
-                        font-size: 4.5rem;
-                        padding-top: 0.9rem;
-                        color: #02897A;
-                        font-weight: 700;
-                    }
-
-                    >.simbol {
-                        text-align: left;
-                        margin-left: 0.4rem;
-
-                        .dolar {
-                            font-size: 1.2rem;
-                            color: #02897A;
-                            font-weight: bold;
-                        }
-
-                        .frequency {
-                            font-weight: 400;
-                            line-height: 19px;
-                            color: #AFAFAF;
-                        }
-                    }
-                }
-
-                >.item {
-                    padding: 0.3rem 0;
-                    font-weight: 800;
-                    color: #22343D;
-                }
-
-                button {
-                    @include button-green(0.75rem 2rem);
-                    margin-top: 2rem;
-                    margin-bottom: 2rem;
-                }
-            }
-        }
-    }
-
-    >.enterprise-div {
-        text-align: center;
-        background-color: #22343D;
-        margin-top: 6rem;
-        margin-bottom: 10rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-
-        >.content {
-            padding: 15px 10%;
-            margin: 15px 10%;
-
-            >.preTitle {
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 36px;
-                padding-bottom: 1rem;
-            }
-    
-            >.title {
-                font-weight: bold;
-                font-size: 34px;
-                line-height: 51px;
-                padding-bottom: 0.5rem;
-            }
-    
-            >.text {
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 27px;
-            }
-    
-            button {
-                @include button-green(0.75rem 2rem);
-                margin-top: 2rem;
-            }
-        }
-    }
-
-    >.product-being {
-        >.title {
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
-        }
-
-        >.content {
-            margin-top: 3rem;
-            display: flex;
-            justify-content: space-between;
-
-            img {
-                width: 50%;
-            }
-
-            >.cards {
-                width: 44%;
-                margin-left: 2rem;
-
-                >.card {
-                    margin-bottom: 1.5rem;
-
-                    >.imageTitle {
-                        display: flex;
-                        justify-content: left;
-                        align-items: center;
-
-                        img {
-                            width: 10%;
-                        }
-
-                        >.title {
-                            margin-left: 1rem;
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 24px;
-                            line-height: 36px;
-                        }
-                    }
-
-                    >.description {
-                        margin-top: 1rem;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 28px;
-                    }
-                }
-            }
-        }
-    }
-
-    >.frequently-asked {
-        margin-top: 6rem;
-        margin-bottom: 6rem;
-
-        >.title {
-            text-align: center;
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
-            padding-bottom: 0.5rem;
-        }
-
-        >.subtitle {
-            text-align: center;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 27px;
-        }
-
-        *::before, ::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: inherit;
-        }
-
-        >.cont {
-            margin-top: 2rem;
-
-            >.accordion {
-                >.item {
-                    margin-bottom: 1rem;
-                    border-bottom: 1px solid #474747;
-                    padding: 1rem;
-                    box-shadow: 0.5rem;
-
-                    >.link {
-                        font-size: 1.2rem;
-                        color: #fff;
-                        text-decoration: none;
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: left;
-                        padding: 1rem 1rem;
-
-                        i {
-                            color: #02897A;
-                            padding: 0.5rem;
-                        }
-
-                        >.fa-minus-circle {
-                            display: none;
-                        }
-                    }
-
-                    >.answer {
-                        max-height: 0;
-                        overflow: hidden;
-                        position: relative;
-                        transition: max-height 650ms;
-
-                    }
-
-                    &:target .answer {
-                        max-height: 10rem;
-                    }
-
-                    &:target {
-                        .link {
-                            .fa-plus-circle {
-                                display: none;
-                            }
-                        }
-                    }
-
-                    &:target {
-                        .link {
-                            .fa-minus-circle {
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    >.get-this {
-        display: flex;
-        justify-content: space-between;
-        background: #02897A;
-        border-radius: 32px;
-        padding: 0.5rem;
-
-        >.content {
-            width: 59%;
-            padding: 2rem;
-
-            >.title {
-                font-size: 32px;
-                line-height: 151.4%;
-            }
-
-            >.getThis {
-                button {
-                    @include button-green(0.75rem 2rem);
-                    background: #fff;
-                    color: #02897A;
-                    font-weight: 600;
-                    font-size: 1.2rem;
-                    line-height: 30px;
-                    margin-top: 2.5rem;
-                }
-            }
-        }
-
-        >.image {
-            width: 45%;
-        }
-    }
-}
-
-
-/* 
-===============
-PRODUCT SETTINGS
-===============
-*/
 
 .container {
-    background-color: #1f2e35;
+    background-color: var(--background-color-default);
+    color: var(--color-default);
+    
+    /*
+    ===================
+    PAGE PRODUCT
+    ===================
+    */
 
     >.welcome-text-image {
         display: flex;
@@ -450,27 +126,17 @@ PRODUCT SETTINGS
             padding: 3rem 0;
             width: 50%;
 
-            > h2 {
-                font-family: Poppins;
-                font-size: 40px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 60px;
-                letter-spacing: 0px;
-                text-align: left;
+            h2 {
+                @include font-settings(700, 40px, normal, 60px);
+                text-align: justify;
                 margin-bottom: 0.6rem;
                 width: 65%;
                 padding-top: 3rem;
             }
 
             > p {
-                font-family: Poppins;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 28px;
-                letter-spacing: 0px;
-                text-align: left;
+                @include font-settings(400, 18px, normal, 28px);
+                text-align: justify;
                 margin-bottom: 3rem;
                 width: 75%;
             }
@@ -478,6 +144,10 @@ PRODUCT SETTINGS
             .welcomeFooter {
                 display: flex;
                 align-items: center;
+
+                button {
+                    @include button-hover();
+                }
 
                 .getStarted {
                     @include button-green(0.75rem 2rem)
@@ -493,9 +163,9 @@ PRODUCT SETTINGS
                     }
 
                     p {
-                        color: #02897A;
+                        color: $color-watch;
                         text-decoration: underline;
-                        font-weight: 600;
+                        @include font-settings(600, 16px, normal, 24px);
                     }
                 }
             }
@@ -508,7 +178,7 @@ PRODUCT SETTINGS
 
     >.products-for-you {
         padding-bottom: 9.5rem;
-        background-image: url('../../assets/backgroundPFU.svg');
+        background-image: url('../assets/backgroundPFU.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position-y: 6rem;
@@ -524,7 +194,6 @@ PRODUCT SETTINGS
             display: flex;
             justify-content: space-between;
             padding: 15px 10%;
-            margin: 15px 10%;
 
             >.item {
                 img {
@@ -536,13 +205,17 @@ PRODUCT SETTINGS
                 }
 
                 p {
-                    width: 80%;
+                    width: 76%;
                 }
             }
         }
 
         >.signUpNow {
             text-align: center;
+
+            button {
+                @include button-hover();
+            }
 
             .buttonSignUpNow {
                 @include button-green(0.75rem 2rem);
@@ -554,17 +227,27 @@ PRODUCT SETTINGS
     >.text-image {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 5rem;
 
         >.text {
             padding: 1rem 0;
-            width: 48%;
+            width: 44%;
+
+            .preTitle {
+                @include font-settings(600, 16px, normal, 24px);
+            }
+
+            .title {
+                @include font-settings(bold, 32px, normal, 48px);
+            }
 
             .subtitle {
-                font-weight: bold;
+                @include font-settings(600, 16px, normal, 26px);
             }
 
             p {
-                padding-bottom: 0.8rem;
+                padding-bottom: 1.2rem;
+                @include font-settings(normal, 16px, normal, 26px);
             }
 
             h1 {
@@ -580,6 +263,7 @@ PRODUCT SETTINGS
     >.image-text {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 5rem;
 
         >.image {
             width: 48%;
@@ -622,24 +306,25 @@ PRODUCT SETTINGS
 
     >.quick-process {
         padding-bottom: 9.5rem;
-        background-image: url('../../assets/revert-background.svg');
+        background-image: url('../assets/revert-background.svg');
         background-repeat: no-repeat;
         background-size: contain;
         margin-top: 1rem;
         padding-top: 15rem;
 
         >.title {
-            font-weight: 700;
-            line-height: 48px;
+            @include font-settings(700, 32px, normal, 48px);
             text-align: center;
             padding-bottom: 1rem;
         }
 
         >.subtitle {
             text-align: center;
-            font-weight: 500;
+            @include font-settings(500, 16px, normal, 26px);
             padding: 0px 20%;
+            margin: auto;
             padding-bottom: 1rem;
+            width: 80%;
         }
 
         >.content {
@@ -673,6 +358,10 @@ PRODUCT SETTINGS
             text-align: center;
 
             button {
+                @include button-hover();
+            }
+
+            button {
                 @include button-green(0.75rem 2rem);
                 margin-top: 2rem;
             }
@@ -681,12 +370,11 @@ PRODUCT SETTINGS
 
     >.contents-strategies {
         >.title {
-            font-weight: 700;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
         }
 
         >.subtitle {
-            font-weight: 500;
+            @include font-settings(500, 16px, normal, 26px);
         }
 
         >.cards {
@@ -739,8 +427,11 @@ PRODUCT SETTINGS
         text-align: center;
 
         >.title {
-            font-weight: 700;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
+        }
+
+        >.subtitle {
+            @include font-settings(500, 16px, normal, 24px);
         }
 
         >.cards {
@@ -751,6 +442,7 @@ PRODUCT SETTINGS
             #change {
                 background: #02897A;
                 color: #fff;
+
                 >.price {
                     >.value {
                         color: #fff;
@@ -781,13 +473,12 @@ PRODUCT SETTINGS
                 width: 28%;
 
                 >.title {
-                    font-weight: 700;
-                    line-height: 40px;
-                    font-size: 1rem;
+                    @include font-settings(700, 24px, normal, 40px);
                     padding-top: 1rem;
                 }
 
                 >.subtitle {
+                    @include font-settings(normal, 16px, normal, 40px);
                     font-size: 0.8rem;
                     margin-bottom: 2rem;
                 }
@@ -831,6 +522,7 @@ PRODUCT SETTINGS
                 }
 
                 button {
+                    @include button-hover();
                     @include button-green(0.75rem 2rem);
                     margin-top: 2rem;
                     margin-bottom: 2rem;
@@ -844,12 +536,12 @@ PRODUCT SETTINGS
         margin-top: 6rem;
 
         >.title {
+            @include font-settings(bold, 34px, normal, 57px);
             padding-bottom: 1rem;
         }
 
         >.subtitle {
-            text-align: center;
-            font-weight: 500;
+            @include font-settings(500, 16px, normal, 28px);
             padding: 0px 26%;
             padding-bottom: 1rem;
         }
@@ -942,12 +634,11 @@ PRODUCT SETTINGS
         margin: 10% 15%;
 
         >.content {
-            width: 59%;
+            width: 52%;
             padding: 2rem;
 
             >.title {
-                font-size: 32px;
-                line-height: 151.4%;
+                @include font-settings(600, 32px, normal, 151.4%);
             }
 
             >.getThis {
@@ -955,9 +646,7 @@ PRODUCT SETTINGS
                     @include button-green(0.75rem 2rem);
                     background: #fff;
                     color: #02897A;
-                    font-weight: 600;
-                    font-size: 1.2rem;
-                    line-height: 30px;
+                    @include font-settings(600, 20px, normal, 30px);
                     margin-top: 2.5rem;
                 }
             }
@@ -968,15 +657,19 @@ PRODUCT SETTINGS
         }
     }
 
+    /*
+    ===================
+    PAGE CUSTOMERS
+    ===================
+    */
+
     >.our-clients {
         margin-bottom: 6rem;
 
         >.title {
+            @include font-settings(bold, 40px, normal, 60px);
             padding-top: 3rem;
             text-align: center;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 60px;
         }
 
         >.clients {
@@ -1004,9 +697,7 @@ PRODUCT SETTINGS
         background-color: #22343D;
         
         >.title {
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
             text-align: center;
         }
 
@@ -1031,18 +722,14 @@ PRODUCT SETTINGS
                 }
 
                 >.title {
+                    @include font-settings(bold, 18px, normal, 33px);
                     padding-top: 1rem;
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                    line-height: 33px;
                     letter-spacing: 0.1px;
                 }
 
                 >.description {
                     padding-top: 1rem;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 27px;
+                    @include font-settings(normal, 16px, normal, 27px);
                     letter-spacing: 0.2px;
                 }
             }
@@ -1051,11 +738,10 @@ PRODUCT SETTINGS
 
     >.how-product {
         text-align: center;
+        margin-top: 5rem;
 
         >.title {
-            font-weight: bold;
-            font-size: 34px;
-            line-height: 51px;
+            @include font-settings(bold, 34px, normal, 51px);
             margin-bottom: 4rem;
         }
 
@@ -1075,28 +761,28 @@ PRODUCT SETTINGS
                 width: 47%;
             }
 
-            >.text {
+            .text {
                 width: 47%;
 
                 >.preTitle {
-                    font-weight: 500;
-                    font-size: 20px;
-                    line-height: 30px;
+                    @include font-settings(500, 20px, normal, 30px);
                     margin-bottom: 1rem;
                 }
 
                 >.title {
+                    @include font-settings(600, 24px, normal, 36px);
                     margin-bottom: 1rem;
                 }
 
                 >.description {
-                    font-size: 16px;
-                    line-height: 28px;
+                    @include font-settings(normal, 16px, normal, 28px);
+                    width: 80%;
                 }
             }
         }
 
         button {
+            @include button-hover();
             @include button-green(0.75rem 2rem);
         }
     }
@@ -1110,10 +796,8 @@ PRODUCT SETTINGS
         padding-bottom: 2rem;
 
         >.title {
+            @include font-settings(bold, 32px, normal, 48px);
             margin: auto;
-            font-weight: bold;
-            font-size: 32px;
-            line-height: 48px;
             width: 50%;
         }
 
@@ -1139,6 +823,168 @@ PRODUCT SETTINGS
 
                 >.find {
                     margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    >.enterprise-div {
+        text-align: center;
+        background-color: #22343D;
+        margin-top: 6rem;
+        margin-bottom: 10rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        >.content {
+            padding: 15px 10%;
+            margin: 15px 10%;
+
+            >.preTitle {
+                @include font-settings(600, 24px, normal, 36px);
+                padding-bottom: 1rem;
+            }
+    
+            >.title {
+                @include font-settings(bold, 34px, normal, 51px);
+                padding-bottom: 0.5rem;
+            }
+    
+            >.text {
+                @include font-settings(normal, 18px, normal, 27px);
+            }
+    
+            button {
+                @include button-hover();
+                @include button-green(0.75rem 2rem);
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    >.product-being {
+        >.title {
+            @include font-settings(bold, 34px, normal, 51px);
+        }
+
+        >.content {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 50%;
+            }
+
+            >.cards {
+                width: 44%;
+                margin-left: 2rem;
+
+                >.card {
+                    margin-bottom: 1.5rem;
+
+                    >.imageTitle {
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+
+                        img {
+                            width: 10%;
+                        }
+
+                        >.title {
+                            @include font-settings(600, 24px, normal, 36px);
+                            margin-left: 1rem;
+                        }
+                    }
+
+                    >.description {
+                        @include font-settings(normal, 16px, normal, 28px);
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    >.frequently-asked {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        >.title {
+            @include font-settings(bold, 34px, normal, 51px);
+            text-align: center;
+            padding-bottom: 0.5rem;
+        }
+
+        >.subtitle {
+            @include font-settings(normal, 18px, normal, 27px);
+            text-align: center;
+        }
+
+        *::before, ::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        >.cont {
+            margin-top: 2rem;
+
+            >.accordion {
+                >.item {
+                    margin-bottom: 1rem;
+                    border-bottom: 1px solid #474747;
+                    padding: 1rem;
+                    box-shadow: 0.5rem;
+
+                    >.link {
+                        font-size: 1.2rem;
+                        color: #fff;
+                        text-decoration: none;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        padding: 1rem 1rem;
+
+                        i {
+                            color: #02897A;
+                            padding: 0.5rem;
+                        }
+
+                        >.fa-minus-circle {
+                            display: none;
+                        }
+                    }
+
+                    >.answer {
+                        max-height: 0;
+                        overflow: hidden;
+                        position: relative;
+                        transition: max-height 650ms;
+
+                    }
+
+                    &:target .answer {
+                        max-height: 10rem;
+                    }
+
+                    &:target {
+                        .link {
+                            .fa-plus-circle {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &:target {
+                        .link {
+                            .fa-minus-circle {
+                                display: block;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1511,7 +1357,7 @@ MEDIA QUERIES NAVBAR
                 }
 
                 >.image {
-                    content: url('../../assets/product2-image.svg');
+                    content: url('../assets/product2-image.svg');
                 }
     
                 >.cards {
@@ -1571,7 +1417,7 @@ MEDIA QUERIES NAVBAR
     }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1200px) {
     .menu {
         display: none;
         position: absolute;
@@ -1580,6 +1426,11 @@ MEDIA QUERIES NAVBAR
         left: 0;
         text-align: center;
         padding: 16px 0;
+
+        img {
+            width: 8%;
+            display:contents;
+        }
 
         li {
             &:hover {
@@ -1614,8 +1465,12 @@ FOOTER SETTINGS
     align-items: center;
     justify-content: space-between;
     padding: 5em 10%;
-    background-color: #1f2e35;
+    background-color: var(--background-color-default);
     color: #fff;
+
+    button {
+        @include button-hover();
+    }
     
     .col1 {
         img {
@@ -1745,7 +1600,7 @@ FOOTER MEDIA QUERIES
 
     .lasttxt {
         text-align: center;
-        background-color: #1f2e35;
+        background-color: var(--background-color-default);
         color: white;
         padding-bottom: 10%;
         padding-top: -8%;
@@ -1791,7 +1646,7 @@ FIRST DIV
             width: 80%;
             border-radius: 48px;
             height: 3.5rem;
-            background-color: #1f2e35;
+            background-color: var(--background-color-default);
 
             .join-now-box {
                 background-color: transparent;
@@ -2164,7 +2019,7 @@ FORM SECTION - MEDIA QUERIES
 */
 @media (max-width: 1020px) {
     .form-bg {
-        background-color: #1f2e35;
+        background-color: var(--background-color-default);
     }
     .send-msg {
         margin-top: 7em;
