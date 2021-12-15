@@ -6,3 +6,18 @@
     padding: $padding;
     font-size: 16px;
 }
+
+@mixin font-settings($weight, $size, $style, $height) {
+    font-weight: $weight;
+    font-size: $size;
+    font-style: $style;
+    line-height: $height;
+}
+
+@mixin button-hover() {
+    &:hover {
+        background-color: $background-color-navbar;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+}
