@@ -40,13 +40,17 @@ DEFAULT SETTINGS
 :root() {
   --background-color-default: #1f2e35;
   --color-default: #fff;
+  --button-color-border: rgb(228, 22, 22);
 }
 
 .dark-mode:root {
   --background-color-default: #fff;
   --color-default: #090c0e;
+  --button-color-border: black;
 }
-
+.dark-mode:root .nav-bar .logo .image {
+  content: url("../assets/light-mode-logo.svg");
+}
 .wrapper {
   padding-bottom: 9.5rem;
   padding: 15px 10%;
@@ -76,13 +80,11 @@ NAVBAR SETTINGS
   font-size: 14px;
   display: flex;
 }
-.nav-bar .logo .image img {
-  width: 40%;
-}
 .nav-bar .signIn {
   color: var(--color-default);
   background-color: var(--background-color-default);
-  border: 1px solid var(--color-default);
+  border-color: var(--button-color-border);
+  border-style: solid;
   border-radius: 5px;
   padding: 0.75rem 2rem;
   font-size: 16px;
@@ -209,7 +211,7 @@ MAIN
 }
 .container > .products-for-you {
   padding-bottom: 9.5rem;
-  background-image: url("../../assets/backgroundPFU.svg");
+  background-image: url("../assets/backgroundPFU.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 6rem;
@@ -326,7 +328,7 @@ MAIN
 }
 .container > .quick-process {
   padding-bottom: 9.5rem;
-  background-image: url("../../assets/revert-background.svg");
+  background-image: url("../assets/revert-background.svg");
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 1rem;
@@ -1271,7 +1273,7 @@ MEDIA QUERIES NAVBAR
     width: 100%;
   }
   .container > .product-being > .content > .image {
-    content: url("../../assets/product2-image.svg");
+    content: url("../assets/product2-image.svg");
   }
   .container > .product-being > .content > .cards {
     margin-top: 2rem;

@@ -7,11 +7,21 @@ DEFAULT SETTINGS
 :root() {
     --background-color-default: #1f2e35;
     --color-default: #fff;
+    --button-color-border: rgb(228, 22, 22);
 }
 
 .dark-mode:root {
     --background-color-default: #fff;
     --color-default: #090c0e;
+    --button-color-border: black;
+    
+    .nav-bar {
+        .logo {
+            .image {
+                content: url('../assets/light-mode-logo.svg');
+            }
+        }
+    }
 }
 
 .wrapper {
@@ -47,18 +57,13 @@ NAVBAR SETTINGS
     .logo {
         font-size: 14px;
         display: flex;
-    
-        .image {
-            img {
-                width: 40%;
-            }
-        }
     }
 
     .signIn {
         color: var(--color-default);
         background-color: var(--background-color-default);
-        border: 1px solid var(--color-default);;
+        border-color: var(--button-color-border);
+        border-style: solid;
         border-radius: 5px;
         padding: 0.75rem 2rem;
         font-size: 16px;
