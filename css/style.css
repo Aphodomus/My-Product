@@ -66,6 +66,49 @@ DEFAULT SETTINGS
 .dark-mode:root .join-thousand {
   background-color: #fff;
 }
+.dark-mode:root .enterprise-div {
+  background-color: #fff;
+}
+.dark-mode:root .frequently-asked .cont .accordion .item .link {
+  color: black;
+}
+.dark-mode:root .price-table {
+  margin-top: 0px;
+}
+.dark-mode:root .cointainer1 {
+  background-color: #fff;
+  color: black;
+  margin-bottom: 0px;
+}
+.dark-mode:root .dad-cards {
+  background-color: #fff;
+  color: black;
+}
+.dark-mode:root .dad-cards .card {
+  border: 0.1px solid #c5c2c2;
+}
+.dark-mode:root .dad-cards .aft-cards {
+  color: black;
+  margin-bottom: 0px;
+}
+.dark-mode:root .contact {
+  background-color: #fff;
+}
+.dark-mode:root .contact .thrid-section-text {
+  color: black;
+}
+.dark-mode:root .map {
+  background-color: #fff;
+  color: black;
+  margin: 0px;
+  border-radius: 0px;
+}
+.dark-mode:root .map .form-bg {
+  background-color: #fff;
+}
+.dark-mode:root .map .form-bg .send-msg {
+  color: black;
+}
 .dark-mode:root .footer {
   color: #090c0e;
 }
