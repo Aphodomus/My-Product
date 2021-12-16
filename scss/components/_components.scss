@@ -37,6 +37,14 @@ DEFAULT SETTINGS
         }
     }
 
+    .why-choose {
+        background-color: #fff;
+    }
+
+    .join-thousand {
+        background-color: #fff;
+    }
+
     .footer {
         color: #090c0e;
         .col1 {
@@ -800,8 +808,6 @@ MAIN
             }
 
             .text {
-                width: 47%;
-
                 >.preTitle {
                     @include font-settings(500, 20px, normal, 30px);
                     margin-bottom: 1rem;
@@ -1300,6 +1306,7 @@ MEDIA QUERIES PRODUCT
                 .reverse {
                     display: flex;
                     flex-direction: column-reverse;
+                    width: 100%;
                 }
     
                 img {
@@ -1309,6 +1316,10 @@ MEDIA QUERIES PRODUCT
     
                 >.text {
                     width: 100%;
+
+                    .description {
+                        width: 100%;
+                    }
                 }
             }
 

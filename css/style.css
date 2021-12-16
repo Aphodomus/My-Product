@@ -60,6 +60,12 @@ DEFAULT SETTINGS
 .dark-mode:root .contents-strategies .card {
   border: 0.1px solid #c5c2c2;
 }
+.dark-mode:root .why-choose {
+  background-color: #fff;
+}
+.dark-mode:root .join-thousand {
+  background-color: #fff;
+}
 .dark-mode:root .footer {
   color: #090c0e;
 }
@@ -781,9 +787,6 @@ MAIN
 .container > .how-product > .content img {
   width: 47%;
 }
-.container > .how-product > .content .text {
-  width: 47%;
-}
 .container > .how-product > .content .text > .preTitle {
   font-weight: 500;
   font-size: 20px;
@@ -1227,12 +1230,16 @@ MEDIA QUERIES PRODUCT
   .container > .how-product > .content .reverse {
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
   }
   .container > .how-product > .content img {
     width: 100%;
     margin-bottom: 2rem;
   }
   .container > .how-product > .content > .text {
+    width: 100%;
+  }
+  .container > .how-product > .content > .text .description {
     width: 100%;
   }
   .container > .how-product button {
