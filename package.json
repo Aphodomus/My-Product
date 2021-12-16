@@ -20,6 +20,7 @@
   },
   "homepage": "https://gitlab.com/Aphodomus/interns-program-myproduct#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.15",
     "parcel": "^2.0.1",
