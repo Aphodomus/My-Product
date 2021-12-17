@@ -71,6 +71,10 @@ DEFAULT SETTINGS
         margin-bottom: 0px;
     }
 
+    body {
+        background-color: #fff;
+    }
+
     .dad-cards {
         background-color: #fff;
         color: black;
@@ -95,7 +99,6 @@ DEFAULT SETTINGS
     .map {
         background-color: #fff;
         color: black;
-        margin: 0px;
         border-radius: 0px;
 
         .form-bg {
@@ -2055,7 +2058,6 @@ THRID SECTION - MEDIA QUERIES GENERAL
     }
     .map {
         max-width: 90%;
-        max-height: 3em;
         align-items: center;
         justify-content: center;
         margin-left: 1.5em;
@@ -2128,9 +2130,6 @@ FORM SECTION - MEDIA QUERIES
 @media (max-width: 1020px) {
     .form-bg {
         background-color: var(--background-color-default);
-    }
-    .send-msg {
-        margin-top: 7em;
     }
     .name-mail {
         max-width: 25em;
