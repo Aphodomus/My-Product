@@ -7,6 +7,7 @@ const app = express();
 
 app.use('/css',express.static(__dirname +'/css'));
 app.use('/assets',express.static(__dirname +'/assets'));
+app.use('/scripts',express.static(__dirname +'/scripts'));
 
 app.get('/index.html', (request, response) => {
     response.sendFile(__dirname + "/src/index.html");
