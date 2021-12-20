@@ -134,6 +134,18 @@ DEFAULT SETTINGS
     padding: 15px 10%;
 }
 
+[data-scroll] {
+    transition: transform 3s;
+}
+
+[data-scroll="in"] {
+    transform: translateY(0);
+}
+
+[data-scroll="out"] {
+    transform: translateY(50px);
+}
+
 /* 
 ===============
 NAVBAR SETTINGS
