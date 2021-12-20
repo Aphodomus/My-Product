@@ -1150,6 +1150,7 @@ MEDIA QUERIES PRODUCT
 
             >.image {
                 width: 100%;
+                z-index: -1;
             }
         }
 
@@ -1338,6 +1339,7 @@ MEDIA QUERIES PRODUCT
         }
 
         >.our-clients {
+            transform: none !important;
             margin-bottom: 1rem;
 
             >.clients {
@@ -1439,7 +1441,7 @@ MEDIA QUERIES NAVBAR
 
     .container {
         padding: 0 0;
-        
+
         >.price-table {
             margin-top: 3rem;
 
@@ -1543,6 +1545,7 @@ MEDIA QUERIES NAVBAR
 
 @media (max-width: 1200px) {
     .menu {
+        z-index: 1;
         display: none;
         position: absolute;
         background-color: teal;

@@ -1102,6 +1102,7 @@ MEDIA QUERIES PRODUCT
   }
   .container > .welcome-text-image > .image {
     width: 100%;
+    z-index: -1;
   }
   .container > .products-for-you {
     background-position-y: 90%;
@@ -1250,6 +1251,7 @@ MEDIA QUERIES PRODUCT
     width: 100%;
   }
   .container > .our-clients {
+    transform: none !important;
     margin-bottom: 1rem;
   }
   .container > .our-clients > .clients {
@@ -1407,6 +1409,7 @@ MEDIA QUERIES NAVBAR
 }
 @media (max-width: 1200px) {
   .menu {
+    z-index: 1;
     display: none;
     position: absolute;
     background-color: teal;
